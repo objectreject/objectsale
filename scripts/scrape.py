@@ -202,7 +202,7 @@ def parse_detail_blob(td):
     return summary, dated_hours, dated_notes, ongoing_hours, ongoing_notes
 
 
-PHONE_RE = re.compile(r"^[\d\s()+.-]{7,}$")
+PHONE_RE = re.compile(r"^[\d\s()+.-]{7,}(?:\s*x\.?\s*\d+|\s*ext\.?\s*\d+)?$", re.IGNORECASE)
 ADDRESS_RE = re.compile(r"^\d{1,6}\s+\S|^P\.?O\.?\s*Box\b", re.IGNORECASE)
 
 

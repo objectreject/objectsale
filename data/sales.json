@@ -1413,9 +1413,9 @@
     {
       "id": "X5858",
       "city": "Palos Verdes Estates",
-      "venue": "Malaga Cove Library \u2014 310-377-9584 x 553",
+      "venue": "Malaga Cove Library",
       "address": "2400 Via Campesina",
-      "phone": null,
+      "phone": "310-377-9584 x 553",
       "lat": 33.7988309,
       "lng": -118.3892081,
       "occurrences": [

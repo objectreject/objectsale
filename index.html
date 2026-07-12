@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>objectsale</title>
-<link rel="stylesheet" href="styles.css?v=1">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -40,15 +40,28 @@
         <option value="99999">Any distance</option>
       </select>
     </div>
-    <button class="btn-primary" id="plan-btn" onclick="planDay()">Plan my day</button>
+    <button class="btn-primary" id="plan-btn" onclick="findSales()">Find sales</button>
   </div>
 
   <div id="status"></div>
 
-  <div id="results"></div>
+  <div id="plan-section" style="display:none">
+    <h2>Your Plan</h2>
+    <div id="plan-empty" class="empty-state">Check off sales below to build your route.</div>
+    <div id="plan-results"></div>
+  </div>
+
+  <div id="browse-section" style="display:none">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="weekend" onclick="switchTab('weekend')">Weekend Sales <span class="tab-count" id="weekend-count"></span></button>
+      <button class="tab-btn" data-tab="ongoing" onclick="switchTab('ongoing')">Ongoing <span class="tab-count" id="ongoing-count"></span></button>
+    </div>
+    <div id="tab-weekend" class="tab-panel"></div>
+    <div id="tab-ongoing" class="tab-panel" style="display:none"></div>
+  </div>
 
 </div>
 
-<script src="app.js?v=1"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>

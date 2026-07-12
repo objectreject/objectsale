@@ -1,8 +1,14 @@
 const AVG_SPEED_MPH = 25; // straight-line-distance travel estimate, not real routing
 const MIN_STOP_MINUTES = 30; // assumed browsing time per stop
 const DAY_ABBR = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MONTH_ABBR = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 let salesData = null;
+let origin = null;
+let startTime = '09:00';
+let weekendStops = [];
+let ongoingStops = [];
+const selectedIds = new Set();
 
 async function init() {
   const dateInput = document.getElementById('date-input');
@@ -30,14 +36,14 @@ function setStatus(msg, isError) {
   el.className = isError ? 'error' : '';
 }
 
-async function planDay() {
+async function findSales() {
   if (!salesData) {
     setStatus('Sales data is still loading, try again in a moment.', true);
     return;
   }
   const dateStr = document.getElementById('date-input').value;
   const zip = document.getElementById('zip-input').value.trim();
-  const startTime = document.getElementById('time-input').value || '09:00';
+  startTime = document.getElementById('time-input').value || '09:00';
   const radiusMiles = Number(document.getElementById('radius-input').value);
 
   if (!dateStr) {
@@ -52,9 +58,9 @@ async function planDay() {
   const btn = document.getElementById('plan-btn');
   btn.disabled = true;
   setStatus('Looking up your zip code…');
-  document.getElementById('results').innerHTML = '';
+  document.getElementById('plan-section').style.display = 'none';
+  document.getElementById('browse-section').style.display = 'none';
 
-  let origin;
   try {
     origin = await geocodeZip(zip);
   } catch (err) {
@@ -62,8 +68,6 @@ async function planDay() {
     btn.disabled = false;
     return;
   }
-
-  setStatus('Building your route…');
 
   const weekday = DAY_ABBR[new Date(dateStr + 'T00:00:00').getDay()];
   const candidates = salesData.sales
@@ -73,19 +77,32 @@ async function planDay() {
       ...stop,
       distanceFromOrigin: haversineMiles(origin, { lat: stop.sale.lat, lng: stop.sale.lng }),
     }))
-    .filter(stop => stop.distanceFromOrigin <= radiusMiles);
+    .filter(stop => stop.distanceFromOrigin <= radiusMiles)
+    .sort((a, b) => a.distanceFromOrigin - b.distanceFromOrigin);
+
+  weekendStops = candidates.filter(s => !s.isOngoing);
+  ongoingStops = candidates.filter(s => s.isOngoing);
 
   if (!candidates.length) {
     setStatus('');
-    document.getElementById('results').innerHTML =
-      '<div class="empty-state">No sales found for that date within range. Try a wider radius or a different day.</div>';
+    document.getElementById('plan-section').style.display = '';
+    document.getElementById('plan-empty').textContent =
+      'No sales found for that date within range. Try a wider radius or a different day.';
+    document.getElementById('plan-results').innerHTML = '';
     btn.disabled = false;
     return;
   }
 
-  const ordered = buildRoute(origin, candidates, startTime);
-  renderResults(ordered);
+  // Default: all dated/weekend sales pre-selected as the must-visit core of the
+  // day; ongoing/recurring sales start unchecked as optional add-ons.
+  selectedIds.clear();
+  weekendStops.forEach(s => selectedIds.add(s.sale.id));
+
   setStatus('');
+  document.getElementById('plan-section').style.display = '';
+  document.getElementById('browse-section').style.display = '';
+  renderBrowseLists();
+  renderPlan();
   btn.disabled = false;
 }
 
@@ -103,8 +120,79 @@ function eligibleStop(sale, dateStr, weekday) {
   return null;
 }
 
-/** Greedy nearest-neighbor from origin, skipping stops whose close time has already passed
- *  given today's date, and flagging stops we likely can't reach before closing. */
+function toggleStop(id, checked) {
+  if (checked) selectedIds.add(id);
+  else selectedIds.delete(id);
+  renderPlan();
+  // Keep the checked/unchecked visual state of rows in sync without a full re-render.
+  document.querySelectorAll(`input[data-sale-id="${id}"]`).forEach(input => {
+    input.closest('.pick-row').classList.toggle('checked', checked);
+  });
+}
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === name));
+  document.getElementById('tab-weekend').style.display = name === 'weekend' ? '' : 'none';
+  document.getElementById('tab-ongoing').style.display = name === 'ongoing' ? '' : 'none';
+}
+
+function renderBrowseLists() {
+  document.getElementById('weekend-count').textContent = `(${weekendStops.length})`;
+  document.getElementById('ongoing-count').textContent = `(${ongoingStops.length})`;
+  document.getElementById('tab-weekend').innerHTML = weekendStops.map(pickRowHTML).join('') ||
+    '<div class="empty-state">No dated sales found in range for this date.</div>';
+  document.getElementById('tab-ongoing').innerHTML = ongoingStops.map(pickRowHTML).join('') ||
+    '<div class="empty-state">No ongoing sales found in range.</div>';
+}
+
+function pickRowHTML(stop) {
+  const sale = stop.sale;
+  const title = stop.headline || sale.venue || sale.city;
+  const checked = selectedIds.has(sale.id);
+  const badge = stop.isOngoing
+    ? '<span class="badge ongoing">Ongoing</span>'
+    : `<span class="badge dated">${formatDateRange(stop.occurrence.start, stop.occurrence.end)}</span>`;
+  const hoursText = stop.hours ? stop.hours.raw : (stop.isOngoing ? 'check hours' : 'hours vary');
+
+  return `
+    <label class="pick-row ${checked ? 'checked' : ''}">
+      <input type="checkbox" data-sale-id="${sale.id}" ${checked ? 'checked' : ''}
+        onchange="toggleStop('${sale.id}', this.checked)">
+      <div class="pick-main">
+        <div class="pick-title">${escapeHTML(title)} ${badge}</div>
+        <div class="pick-sub">${escapeHTML(sale.city)} · ${stop.distanceFromOrigin.toFixed(1)} mi · ${escapeHTML(hoursText)}</div>
+      </div>
+    </label>
+  `;
+}
+
+function formatDateRange(startISO, endISO) {
+  const [sy, sm, sd] = startISO.split('-').map(Number);
+  const [ey, em, ed] = endISO.split('-').map(Number);
+  if (startISO === endISO) return `${MONTH_ABBR[sm - 1]} ${sd}`;
+  if (sm === em) return `${MONTH_ABBR[sm - 1]} ${sd}–${ed}`;
+  return `${MONTH_ABBR[sm - 1]} ${sd}–${MONTH_ABBR[em - 1]} ${ed}`;
+}
+
+function renderPlan() {
+  const all = weekendStops.concat(ongoingStops);
+  const selected = all.filter(s => selectedIds.has(s.sale.id));
+  const emptyEl = document.getElementById('plan-empty');
+  const resultsEl = document.getElementById('plan-results');
+
+  if (!selected.length) {
+    emptyEl.style.display = '';
+    emptyEl.textContent = 'Check off sales below to build your route.';
+    resultsEl.innerHTML = '';
+    return;
+  }
+
+  emptyEl.style.display = 'none';
+  const route = buildRoute(origin, selected, startTime);
+  resultsEl.innerHTML = route.map((stop, i) => stopCardHTML(stop, i + 1)).join('');
+}
+
+/** Greedy nearest-neighbor from origin, flagging stops we likely can't reach before closing. */
 function buildRoute(origin, candidates, startTime) {
   const remaining = candidates.slice();
   const route = [];
@@ -167,23 +255,20 @@ async function geocodeZip(zip) {
   return { lat: Number(place.latitude), lng: Number(place.longitude) };
 }
 
-function renderResults(route) {
-  const container = document.getElementById('results');
-  container.innerHTML = route.map((stop, i) => stopCardHTML(stop, i + 1)).join('');
-}
-
 function stopCardHTML(stop, order) {
   const sale = stop.sale;
   const title = stop.headline || sale.venue || sale.city;
   const mapsQuery = encodeURIComponent(`${sale.address || ''} ${sale.city} CA`);
   const tags = [];
 
+  tags.push(stop.isOngoing
+    ? `<span class="tag ongoing">Ongoing</span>`
+    : `<span class="tag dated">${formatDateRange(stop.occurrence.start, stop.occurrence.end)}</span>`);
+
   if (stop.hours) {
     tags.push(`<span class="tag hours">${stop.hours.raw}</span>`);
-  } else if (stop.isOngoing) {
-    tags.push(`<span class="tag ongoing">Ongoing — check hours</span>`);
   } else {
-    tags.push(`<span class="tag ongoing">Hours not listed for ${DAY_ABBR[new Date().getDay()]}</span>`);
+    tags.push(`<span class="tag">hours not listed for this day — check ahead</span>`);
   }
 
   if (order > 1) {
