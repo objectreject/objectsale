@@ -43,7 +43,6 @@ async function findSales() {
   }
   const dateStr = document.getElementById('date-input').value;
   const zip = document.getElementById('zip-input').value.trim();
-  startTime = document.getElementById('time-input').value || '09:00';
   const radiusMiles = Number(document.getElementById('radius-input').value);
 
   if (!dateStr) {
