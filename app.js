@@ -1,11 +1,8 @@
-const AVG_SPEED_MPH = 25; // straight-line-distance travel estimate, not real routing
-const MIN_STOP_MINUTES = 30; // assumed browsing time per stop
 const DAY_ABBR = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const MONTH_ABBR = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 let salesData = null;
 let origin = null;
-let startTime = '09:00';
 let weekendStops = [];
 let ongoingStops = [];
 const selectedIds = new Set();
@@ -187,16 +184,15 @@ function renderPlan() {
   }
 
   emptyEl.style.display = 'none';
-  const route = buildRoute(origin, selected, startTime);
+  const route = buildRoute(origin, selected);
   resultsEl.innerHTML = route.map((stop, i) => stopCardHTML(stop, i + 1)).join('');
 }
 
-/** Greedy nearest-neighbor from origin, flagging stops we likely can't reach before closing. */
-function buildRoute(origin, candidates, startTime) {
+/** Greedy nearest-neighbor from origin, straight-line distance only. */
+function buildRoute(origin, candidates) {
   const remaining = candidates.slice();
   const route = [];
   let current = origin;
-  let clockMinutes = timeToMinutes(startTime);
 
   while (remaining.length) {
     remaining.sort((a, b) =>
@@ -204,34 +200,11 @@ function buildRoute(origin, candidates, startTime) {
       haversineMiles(current, { lat: b.sale.lat, lng: b.sale.lng }));
     const next = remaining.shift();
     const distance = haversineMiles(current, { lat: next.sale.lat, lng: next.sale.lng });
-    const travelMinutes = Math.max(10, (distance / AVG_SPEED_MPH) * 60);
-    const arrival = clockMinutes + travelMinutes;
 
-    let warn = false;
-    if (next.hours && next.hours.close) {
-      const closeMinutes = timeToMinutes(next.hours.close);
-      if (arrival > closeMinutes) warn = true;
-    }
-
-    route.push({ ...next, distanceFromPrev: distance, travelMinutes, arrivalMinutes: arrival, warn });
-
-    clockMinutes = arrival + MIN_STOP_MINUTES;
+    route.push({ ...next, distanceFromPrev: distance });
     current = { lat: next.sale.lat, lng: next.sale.lng };
   }
   return route;
-}
-
-function timeToMinutes(hhmm) {
-  const [h, m] = hhmm.split(':').map(Number);
-  return h * 60 + m;
-}
-
-function minutesToClock(mins) {
-  const h24 = Math.floor(mins / 60) % 24;
-  const m = Math.round(mins % 60);
-  const ampm = h24 >= 12 ? 'PM' : 'AM';
-  const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
-  return `${h12}:${String(m).padStart(2, '0')} ${ampm}`;
 }
 
 function haversineMiles(a, b) {
@@ -271,15 +244,9 @@ function stopCardHTML(stop, order) {
   }
 
   if (order > 1) {
-    tags.push(`<span class="tag drive">${stop.distanceFromPrev.toFixed(1)} mi / ~${Math.round(stop.travelMinutes)} min from last stop</span>`);
+    tags.push(`<span class="tag drive">${stop.distanceFromPrev.toFixed(1)} mi from last stop</span>`);
   } else {
     tags.push(`<span class="tag drive">${stop.distanceFromOrigin.toFixed(1)} mi from start</span>`);
-  }
-
-  tags.push(`<span class="tag">arrive ~${minutesToClock(stop.arrivalMinutes)}</span>`);
-
-  if (stop.warn) {
-    tags.push(`<span class="tag warn">may be closed by the time you arrive</span>`);
   }
 
   const notes = (stop.notes || []).filter(Boolean);
@@ -288,7 +255,7 @@ function stopCardHTML(stop, order) {
     : '';
 
   return `
-    <div class="stop-card ${stop.isOngoing ? 'ongoing-only' : ''} ${stop.warn ? 'warn' : ''}">
+    <div class="stop-card ${stop.isOngoing ? 'ongoing-only' : ''}">
       <div class="stop-head">
         <div class="stop-order">${order}</div>
         <div>
@@ -297,7 +264,7 @@ function stopCardHTML(stop, order) {
         </div>
       </div>
       <div class="stop-address">
-        <a href="https://maps.apple.com/?q=${mapsQuery}" target="_blank" rel="noopener">${escapeHTML(sale.address || sale.city)}</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}" target="_blank" rel="noopener">${escapeHTML(sale.address || sale.city)}</a>
         ${sale.phone ? ` · <a href="tel:${sale.phone.replace(/[^\d+]/g, '')}">${escapeHTML(sale.phone)}</a>` : ''}
       </div>
       <div class="stop-meta">${tags.join('')}</div>
