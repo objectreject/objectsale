@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>objectsale</title>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<div id="topbar">
+  <h1>objectsale</h1>
+  <div class="spacer"></div>
+  <div id="data-age" class="stat-pill">loading…</div>
+</div>
+
+<div id="app">
+
+  <div id="planner">
+    <div class="field">
+      <label>Date</label>
+      <input type="date" id="date-input">
+    </div>
+    <div class="field">
+      <label>Starting zip</label>
+      <input type="text" id="zip-input" placeholder="e.g. 90210" inputmode="numeric" maxlength="5">
+    </div>
+    <div class="field">
+      <label>Start time</label>
+      <input type="time" id="time-input" value="09:00">
+    </div>
+    <div class="field">
+      <label>Radius</label>
+      <select id="radius-input">
+        <option value="15">15 mi</option>
+        <option value="25">25 mi</option>
+        <option value="50" selected>50 mi</option>
+        <option value="75">75 mi</option>
+        <option value="150">150 mi</option>
+        <option value="99999">Any distance</option>
+      </select>
+    </div>
+    <button class="btn-primary" id="plan-btn" onclick="planDay()">Plan my day</button>
+  </div>
+
+  <div id="status"></div>
+
+  <div id="results"></div>
+
+</div>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>

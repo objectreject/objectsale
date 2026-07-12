@@ -1,0 +1,212 @@
+{
+  "100 Civic Center, Mission Viejo, CA": {
+    "lat": 33.596272,
+    "lng": -117.6590587
+  },
+  "1000 Avocado Ave, Newport Beach, CA": {
+    "lat": 33.6077736,
+    "lng": -117.873029
+  },
+  "1000 Spring St, Paso Robles, CA": {
+    "lat": 35.6253834,
+    "lng": -120.6906835
+  },
+  "1008 Wall St, La Jolla, CA": {
+    "lat": 32.8469917,
+    "lng": -117.274204
+  },
+  "1102 E. Montecito St., Santa Barbara, CA": {
+    "lat": 34.4265758,
+    "lng": -119.6800041
+  },
+  "119 N. 8th St, Santa Paula, CA": {
+    "lat": 34.3541659,
+    "lng": -119.0592705
+  },
+  "12006 Venice Blvd, Los Angeles (Mar Vista), CA": {
+    "lat": 34.0058446,
+    "lng": -118.4289671
+  },
+  "1247 /1249 Marin Avenue, Albany, CA": {
+    "lat": 37.8887157,
+    "lng": -122.2880051
+  },
+  "125 W Vine St, Redlands, CA": {
+    "lat": 34.0537537,
+    "lng": -117.1835214
+  },
+  "12511 Moorpark St, Studio City, CA": {
+    "lat": 34.1506467,
+    "lng": -118.4055941
+  },
+  "1320 Highland Ave, Manhattan Beach, CA": {
+    "lat": 33.886883,
+    "lng": -118.4103642
+  },
+  "1351 Maple Avenue, Santa Rosa, CA": {
+    "lat": 38.4341348,
+    "lng": -122.7010868
+  },
+  "14020 City Center Dr, Chino Hills, CA": {
+    "lat": 33.9975827,
+    "lng": -117.7306749
+  },
+  "1410 W Temple St, Los Angeles, CA": {
+    "lat": 34.0671091,
+    "lng": -118.2574018
+  },
+  "14245 Moorpark St, Sherman Oaks, CA": {
+    "lat": 34.1512227,
+    "lng": -118.4436874
+  },
+  "1500 East Villa St., Pasadena, CA": {
+    "lat": 34.154263,
+    "lng": -118.119745
+  },
+  "1874 N. Hillhurst Ave., Los Angeles (Los Feliz), CA": {
+    "lat": 34.1055614,
+    "lng": -118.2874231
+  },
+  "203 S Los Angeles St, Los Angeles, CA": {
+    "lat": 34.050071,
+    "lng": -118.2438831
+  },
+  "21052 Devonshire St, Chatsworth, CA": {
+    "lat": 34.2569724,
+    "lng": -118.592637
+  },
+  "2211 W Jefferson Blvd, Los Angeles, CA": {
+    "lat": 34.0220775,
+    "lng": -118.2803913
+  },
+  "23743 W. Valencia Blvd., Valencia, CA": null,
+  "2400 Via Campesina, Palos Verdes Estates, CA": {
+    "lat": 33.7988309,
+    "lng": -118.3892081
+  },
+  "24105 Lake Gregory Dr., Crestline, CA": {
+    "lat": 34.2420324,
+    "lng": -117.2770041
+  },
+  "249 N 9th St, Grover Beach, CA": {
+    "lat": 35.1231841,
+    "lng": -120.6202277
+  },
+  "2906 S. La Brea Ave, Los Angeles (Baldwin Hills), CA": {
+    "lat": 34.0149216,
+    "lng": -118.355455
+  },
+  "30341 Crown Valley Pkwy, Laguna Niguel, CA": {
+    "lat": 33.5224912,
+    "lng": -117.7169451
+  },
+  "330 Park Blvd, San Diego, CA": {
+    "lat": 32.7089055,
+    "lng": -117.1541411
+  },
+  "3301 Torrance Blvd, Torrance, CA": {
+    "lat": 33.8371247,
+    "lng": -118.3429843
+  },
+  "33792 Crown Valley Rd, Acton, CA": {
+    "lat": 34.4819957,
+    "lng": -118.1982049
+  },
+  "350 W Sierra Madre Blvd, Sierra Madre, CA": {
+    "lat": 34.1617686,
+    "lng": -118.0601957
+  },
+  "3795 31st St, San Diego, CA": {
+    "lat": 32.74727,
+    "lng": -117.126847
+  },
+  "4000 Middlefield Road, Palo Alto, CA": {
+    "lat": 37.4177885,
+    "lng": -122.1089784
+  },
+  "407 E. Chapman Ave, Orange, CA": {
+    "lat": 33.7883082,
+    "lng": -117.8497096
+  },
+  "4193 Park Blvd (at Howard Ave), San Diego, CA": null,
+  "475 North M St, Tulare, CA": {
+    "lat": 36.2129525,
+    "lng": -119.3454544
+  },
+  "4985 La Cuenta Dr, San Diego, CA": {
+    "lat": 32.8208823,
+    "lng": -117.0980871
+  },
+  "500 W. Broadway, Anaheim, CA": {
+    "lat": 33.831904,
+    "lng": -117.918771
+  },
+  "501 East North Ave., Lompoc, CA": {
+    "lat": 34.6537582,
+    "lng": -120.4520495
+  },
+  "501 South Venice Blvd., Venice, CA": {
+    "lat": 33.9876597,
+    "lng": -118.4651728
+  },
+  "5027 Caspar Ave., Los Angeles (Eagle Rock), CA": {
+    "lat": 34.137431,
+    "lng": -118.2133172
+  },
+  "5211 Tujunga Ave, North Hollywood, CA": {
+    "lat": 34.1656672,
+    "lng": -118.3794033
+  },
+  "5840 Mission Blvd, Riverside, CA": {
+    "lat": 33.9998637,
+    "lng": -117.4123324
+  },
+  "585 Franklin St, Mountain View, CA": {
+    "lat": 37.3903196,
+    "lng": -122.08339
+  },
+  "6121 Melrose Ave, Los Angeles, CA": {
+    "lat": 34.0835689,
+    "lng": -118.3334162
+  },
+  "640 Orange Ave, Coronado, CA": {
+    "lat": 32.6911545,
+    "lng": -117.1776568
+  },
+  "699 Moorpark Ave, Moorpark, CA": {
+    "lat": 34.286322,
+    "lng": -118.882246
+  },
+  "701 Truxtun Ave, Bakersfield, CA": {
+    "lat": 35.3727112,
+    "lng": -119.0100852
+  },
+  "7265 Jackson Dr., San Diego, CA": {
+    "lat": 32.8020355,
+    "lng": -117.0405989
+  },
+  "8301 Ming Ave, Bakersfield, CA": {
+    "lat": 35.33966,
+    "lng": -119.09424
+  },
+  "8437 Sierra Ave, Fontana, CA": {
+    "lat": 34.1006519,
+    "lng": -117.4350528
+  },
+  "933 Broadway, Oakland, CA": {
+    "lat": 37.8015372,
+    "lng": -122.2732396
+  },
+  "97 Hillview Avenue, Los Altos, CA": {
+    "lat": 37.3803783,
+    "lng": -122.1113395
+  },
+  "995 Palm St, San Luis Obispo, CA": {
+    "lat": 35.2822634,
+    "lng": -120.662223
+  },
+  "San Diego, CA": {
+    "lat": 32.7174202,
+    "lng": -117.162772
+  }
+}
