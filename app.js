@@ -238,23 +238,26 @@ function suggestRoute() {
 
   const mustInclude = selected.filter(s => s.sale.id !== anchorId);
   const notYetAdded = ongoingStops.filter(s => !planOrder.includes(s.sale.id));
-  const { path, added } = cheapestInsertionPath(anchor, origin, mustInclude, notYetAdded, MAX_DETOUR_MILES);
+  const maxPepper = Number(document.getElementById('pepper-count').value);
+  const { path, added } = cheapestInsertionPath(anchor, origin, mustInclude, notYetAdded, MAX_DETOUR_MILES, maxPepper);
 
   planOrder = path.map(s => s.sale.id);
   renderBrowseLists();
   renderPlan();
 
   if (added.length) {
-    setStatus(`Added ${added.length} ongoing sale${added.length > 1 ? 's' : ''} that were on the way.`);
+    setStatus(`Added ${added.length} ongoing sale${added.length > 1 ? 's' : ''} that ${added.length > 1 ? 'were' : 'was'} on the way.`);
+  } else if (maxPepper > 0 && notYetAdded.length) {
+    setStatus("Nothing nearby enough to pepper in -- try widening the radius.");
   }
 }
 
 /** Cheapest-insertion heuristic for an open path: the main sale is pinned first, home
  *  (origin) is the fixed destination. Every "mustInclude" stop is inserted wherever it adds
  *  the least extra distance. Then "optional" stops (ongoing sales not yet checked) are added
- *  one at a time, cheapest first, but only while the extra distance stays under maxDetour --
- *  once even the cheapest optional stop costs more than that, the rest are left out. */
-function cheapestInsertionPath(anchor, origin, mustInclude, optional = [], maxDetour = Infinity) {
+ *  one at a time, cheapest first, but only while the extra distance stays under maxDetour and
+ *  the count stays under maxAdd -- once either limit is hit, the rest are left out. */
+function cheapestInsertionPath(anchor, origin, mustInclude, optional = [], maxDetour = Infinity, maxAdd = Infinity) {
   const originPoint = { lat: origin.lat, lng: origin.lng, isOrigin: true };
   const path = [anchor, originPoint];
   const pointOf = node => node.isOrigin ? node : { lat: node.sale.lat, lng: node.sale.lng };
@@ -282,7 +285,7 @@ function cheapestInsertionPath(anchor, origin, mustInclude, optional = [], maxDe
 
   const added = [];
   const optionalPool = optional.slice();
-  while (optionalPool.length) {
+  while (optionalPool.length && added.length < maxAdd) {
     const best = cheapestInsertion(optionalPool);
     if (!best || best.cost > maxDetour) break;
     const [stop] = optionalPool.splice(best.stopIdx, 1);
@@ -351,6 +354,7 @@ function renderPlan() {
   const resultsEl = document.getElementById('plan-results');
   const suggestBtn = document.getElementById('suggest-btn');
   const mapsBtn = document.getElementById('maps-btn');
+  const pepperSelect = document.getElementById('pepper-select');
 
   if (!selected.length) {
     emptyEl.style.display = '';
@@ -358,11 +362,14 @@ function renderPlan() {
     resultsEl.innerHTML = '';
     suggestBtn.style.display = 'none';
     mapsBtn.style.display = 'none';
+    pepperSelect.style.display = 'none';
     return;
   }
 
   emptyEl.style.display = 'none';
-  suggestBtn.style.display = (anchorId || selected.length > 1) ? '' : 'none';
+  const showSuggest = anchorId || selected.length > 1;
+  suggestBtn.style.display = showSuggest ? '' : 'none';
+  pepperSelect.style.display = anchorId ? '' : 'none';
   mapsBtn.style.display = '';
   mapsBtn.href = googleMapsUrl(selected);
 

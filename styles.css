@@ -98,6 +98,28 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
 .btn-maps { background: #1446a0; color: #fff; border-color: #1446a0; }
 .btn-maps:hover { background: #0f367d; }
 
+.pepper-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8c7568;
+  background: #f1e4de;
+  border: 1px solid #ecdfd9;
+  border-radius: 20px;
+  padding: 0.3rem 0.65rem;
+}
+.pepper-select select {
+  background: transparent;
+  border: none;
+  color: #1446a0;
+  font-weight: 700;
+  font-size: 0.72rem;
+  font-family: inherit;
+  outline: none;
+}
+
 #plan-results, #results { display: flex; flex-direction: column; gap: 0.75rem; }
 
 .stop-card {

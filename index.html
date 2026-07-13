@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>objectsale</title>
-<link rel="stylesheet" href="styles.css?v=11">
+<link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
 
@@ -43,6 +43,17 @@
     <div class="plan-head">
       <h2>Your Plan</h2>
       <div class="plan-head-actions">
+        <label class="pepper-select" id="pepper-select" style="display:none">
+          Pepper in
+          <select id="pepper-count">
+            <option value="0">none</option>
+            <option value="1">up to 1</option>
+            <option value="2">up to 2</option>
+            <option value="3" selected>up to 3</option>
+            <option value="5">up to 5</option>
+            <option value="99">as many as fit</option>
+          </select>
+        </label>
         <button type="button" id="suggest-btn" class="btn-sort" onclick="suggestRoute()" style="display:none">Suggest route</button>
         <a id="maps-btn" class="btn-sort btn-maps" href="#" target="_blank" rel="noopener" style="display:none">Open in Google Maps</a>
       </div>
@@ -63,6 +74,6 @@
 
 </div>
 
-<script src="app.js?v=10"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>
