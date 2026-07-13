@@ -216,54 +216,81 @@ function onDragPointerUp(e) {
   renderPlan();
 }
 
-/** One-click suggestion. The main sale always leads -- from there, every other stop gets
- *  inserted wherever it adds the least extra driving distance on the path back to your zip
- *  code, so smaller/ongoing sales get peppered in on the way home. Falls back to plain
- *  nearest-neighbor if there's no main sale set. */
+const MAX_DETOUR_MILES = 6; // how much extra driving an unchecked ongoing sale can add and still get auto-suggested
+
+/** One-click suggestion. The main sale always leads -- from there, every other checked stop
+ *  gets inserted wherever it adds the least extra driving distance on the path back to your
+ *  zip code. It also scans ongoing sales you haven't checked yet and adds any that are
+ *  genuinely on the way (a small detour), so you don't have to hunt through the Ongoing tab
+ *  yourself. Falls back to plain nearest-neighbor if there's no main sale set. */
 function suggestRoute() {
   const byId = stopsById();
   const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
-  if (selected.length < 2) return;
-
   const anchor = selected.find(s => s.sale.id === anchorId);
-  const ordered = anchor
-    ? cheapestInsertionPath(anchor, origin, selected.filter(s => s.sale.id !== anchorId))
-    : buildRoute(origin, selected);
 
-  planOrder = ordered.map(s => s.sale.id);
+  if (!anchor) {
+    if (selected.length > 1) {
+      planOrder = buildRoute(origin, selected).map(s => s.sale.id);
+      renderPlan();
+    }
+    return;
+  }
+
+  const mustInclude = selected.filter(s => s.sale.id !== anchorId);
+  const notYetAdded = ongoingStops.filter(s => !planOrder.includes(s.sale.id));
+  const { path, added } = cheapestInsertionPath(anchor, origin, mustInclude, notYetAdded, MAX_DETOUR_MILES);
+
+  planOrder = path.map(s => s.sale.id);
+  renderBrowseLists();
   renderPlan();
+
+  if (added.length) {
+    setStatus(`Added ${added.length} ongoing sale${added.length > 1 ? 's' : ''} that were on the way.`);
+  }
 }
 
 /** Cheapest-insertion heuristic for an open path: the main sale is pinned first, home
- *  (origin) is the fixed destination, and every remaining stop gets inserted at whichever
- *  point along that path adds the least extra distance -- so it lands on the way out or the
- *  way back, whichever is cheaper, but never ahead of the main sale. */
-function cheapestInsertionPath(anchor, origin, others) {
+ *  (origin) is the fixed destination. Every "mustInclude" stop is inserted wherever it adds
+ *  the least extra distance. Then "optional" stops (ongoing sales not yet checked) are added
+ *  one at a time, cheapest first, but only while the extra distance stays under maxDetour --
+ *  once even the cheapest optional stop costs more than that, the rest are left out. */
+function cheapestInsertionPath(anchor, origin, mustInclude, optional = [], maxDetour = Infinity) {
   const originPoint = { lat: origin.lat, lng: origin.lng, isOrigin: true };
   const path = [anchor, originPoint];
   const pointOf = node => node.isOrigin ? node : { lat: node.sale.lat, lng: node.sale.lng };
 
-  const remaining = others.slice();
-  while (remaining.length) {
-    let bestStopIdx = 0, bestPathIdx = 1, bestCost = Infinity;
-    remaining.forEach((stop, stopIdx) => {
+  function cheapestInsertion(list) {
+    let best = null;
+    list.forEach((stop, stopIdx) => {
       for (let i = 0; i < path.length - 1; i++) {
         const a = pointOf(path[i]);
         const b = pointOf(path[i + 1]);
         const s = pointOf(stop);
         const cost = haversineMiles(a, s) + haversineMiles(s, b) - haversineMiles(a, b);
-        if (cost < bestCost) {
-          bestCost = cost;
-          bestPathIdx = i + 1;
-          bestStopIdx = stopIdx;
-        }
+        if (!best || cost < best.cost) best = { stopIdx, pathIdx: i + 1, cost };
       }
     });
-    path.splice(bestPathIdx, 0, remaining[bestStopIdx]);
-    remaining.splice(bestStopIdx, 1);
+    return best;
   }
 
-  return path.slice(0, -1); // drop the origin sentinel at the end; anchor stays at index 0
+  const remaining = mustInclude.slice();
+  while (remaining.length) {
+    const best = cheapestInsertion(remaining);
+    path.splice(best.pathIdx, 0, remaining[best.stopIdx]);
+    remaining.splice(best.stopIdx, 1);
+  }
+
+  const added = [];
+  const optionalPool = optional.slice();
+  while (optionalPool.length) {
+    const best = cheapestInsertion(optionalPool);
+    if (!best || best.cost > maxDetour) break;
+    const [stop] = optionalPool.splice(best.stopIdx, 1);
+    path.splice(best.pathIdx, 0, stop);
+    added.push(stop);
+  }
+
+  return { path: path.slice(0, -1), added }; // drop the origin sentinel at the end
 }
 
 function stopsById() {
