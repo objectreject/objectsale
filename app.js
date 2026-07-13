@@ -17,11 +17,11 @@ async function init() {
   try {
     const res = await fetch(`data/sales.json?_=${Date.now()}`);
     salesData = await res.json();
-    document.getElementById('data-age').textContent = `data as of ${salesData.scrapedAt}`;
   } catch (err) {
-    document.getElementById('data-age').textContent = 'data unavailable';
     setStatus('Could not load sales data. Try refreshing.', true);
   }
+
+  attachPlanDragHandlers();
 }
 
 function toISODate(d) {
@@ -143,11 +143,64 @@ function setAnchor(id) {
   renderPlan();
 }
 
-function moveStop(id, direction) {
-  const i = planOrder.indexOf(id);
-  const j = i + direction;
-  if (i < 0 || j < 0 || j >= planOrder.length) return;
-  [planOrder[i], planOrder[j]] = [planOrder[j], planOrder[i]];
+function removeStop(id) {
+  document.querySelectorAll(`input[data-sale-id="${id}"]`).forEach(input => { input.checked = false; });
+  toggleStop(id, false);
+}
+
+/** Drag-to-reorder for plan cards: only the dragged card moves (via a CSS transform);
+ *  siblings stay put. On release, the new slot is whichever position the pointer ended up
+ *  above, and planOrder is updated to match -- then a normal renderPlan() puts everything
+ *  back in place. This avoids fiddly tap-the-arrow-N-times reordering. */
+let dragState = null;
+
+function attachPlanDragHandlers() {
+  const container = document.getElementById('plan-results');
+  container.addEventListener('pointerdown', onDragPointerDown);
+}
+
+function onDragPointerDown(e) {
+  const handle = e.target.closest('.drag-handle');
+  if (!handle) return;
+  const card = handle.closest('.stop-card');
+  const container = document.getElementById('plan-results');
+  const cards = Array.from(container.querySelectorAll('.stop-card'));
+
+  dragState = {
+    id: handle.dataset.saleId,
+    card,
+    others: cards.filter(c => c !== card).map(c => ({
+      el: c,
+      mid: c.getBoundingClientRect().top + c.getBoundingClientRect().height / 2,
+    })),
+    startY: e.clientY,
+  };
+  card.classList.add('dragging');
+  card.setPointerCapture(e.pointerId);
+  window.addEventListener('pointermove', onDragPointerMove);
+  window.addEventListener('pointerup', onDragPointerUp);
+  e.preventDefault();
+}
+
+function onDragPointerMove(e) {
+  if (!dragState) return;
+  const dy = e.clientY - dragState.startY;
+  dragState.card.style.transform = `translateY(${dy}px)`;
+}
+
+function onDragPointerUp(e) {
+  if (!dragState) return;
+  const pointerY = e.clientY;
+  const newIndex = dragState.others.filter(o => o.mid < pointerY).length;
+
+  planOrder = planOrder.filter(x => x !== dragState.id);
+  planOrder.splice(newIndex, 0, dragState.id);
+
+  dragState.card.classList.remove('dragging');
+  dragState.card.style.transform = '';
+  window.removeEventListener('pointermove', onDragPointerMove);
+  window.removeEventListener('pointerup', onDragPointerUp);
+  dragState = null;
   renderPlan();
 }
 
@@ -282,7 +335,7 @@ function renderPlan() {
   });
 
   resultsEl.innerHTML = annotated.map((stop, i) =>
-    stopCardHTML(stop, i + 1, i === 0, i === annotated.length - 1)).join('');
+    stopCardHTML(stop, i + 1)).join('');
 }
 
 /** Builds a Google Maps multi-stop directions link following the current plan order. */
@@ -336,7 +389,7 @@ async function geocodeZip(zip) {
   return { lat: Number(place.latitude), lng: Number(place.longitude) };
 }
 
-function stopCardHTML(stop, order, isFirst, isLast) {
+function stopCardHTML(stop, order) {
   const sale = stop.sale;
   const title = stop.headline || sale.venue || sale.city;
   const mapsQuery = encodeURIComponent(`${sale.address || ''} ${sale.city} CA`);
@@ -377,10 +430,14 @@ function stopCardHTML(stop, order, isFirst, isLast) {
         </div>
         <button type="button" class="anchor-btn ${isAnchor ? 'active' : ''}" onclick="setAnchor('${sale.id}')"
           aria-label="Make this the big sale you're planning around" title="Plan the day around this sale">⭐</button>
-        <div class="stop-reorder">
-          <button type="button" class="reorder-btn" onclick="moveStop('${sale.id}', -1)" ${isFirst ? 'disabled' : ''} aria-label="Move up">▲</button>
-          <button type="button" class="reorder-btn" onclick="moveStop('${sale.id}', 1)" ${isLast ? 'disabled' : ''} aria-label="Move down">▼</button>
-        </div>
+        <button type="button" class="remove-btn" onclick="removeStop('${sale.id}')" aria-label="Remove from plan">✕</button>
+        <button type="button" class="drag-handle" data-sale-id="${sale.id}" aria-label="Drag to reorder">
+          <svg width="10" height="16" viewBox="0 0 10 16" fill="currentColor">
+            <circle cx="2" cy="2" r="1.5"/><circle cx="8" cy="2" r="1.5"/>
+            <circle cx="2" cy="8" r="1.5"/><circle cx="8" cy="8" r="1.5"/>
+            <circle cx="2" cy="14" r="1.5"/><circle cx="8" cy="14" r="1.5"/>
+          </svg>
+        </button>
       </div>
       <div class="stop-address">
         <a href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}" target="_blank" rel="noopener">${escapeHTML(sale.address || sale.city)}</a>

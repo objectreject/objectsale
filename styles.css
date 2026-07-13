@@ -19,8 +19,6 @@ body {
 #topbar h1 { font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: -0.01em; }
 .brand-object { color: #62ac1e; }
 .brand-sale { color: #1446a0; }
-.spacer { flex: 1; }
-.stat-pill { background: #f1e4de; border-radius: 20px; padding: 0.25rem 0.7rem; font-size: 0.7rem; color: #8c7568; white-space: nowrap; }
 
 #app { max-width: 640px; margin: 0 auto; padding: 0.25rem 1rem 1rem; }
 
@@ -126,21 +124,38 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
 .anchor-btn:hover { border-color: #e0a94a; }
 .anchor-btn.active { background: #fbeed7; border-color: #e0a94a; color: #a3660c; }
 .stop-card.is-anchor { border-color: #e0a94a; box-shadow: 0 1px 3px rgba(224,169,74,0.15); }
-.stop-reorder { display: flex; flex-direction: column; gap: 0.15rem; flex-shrink: 0; }
-.reorder-btn {
+.stop-card.dragging { box-shadow: 0 10px 24px rgba(20,70,160,0.18); z-index: 5; cursor: grabbing; }
+
+.remove-btn {
   background: #f1e4de;
+  border: 1px solid #ecdfd9;
   color: #8c7568;
-  font-size: 0.6rem;
-  line-height: 1;
-  width: 1.4rem;
-  height: 1.05rem;
-  border-radius: 4px;
+  font-size: 0.72rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
 }
-.reorder-btn:hover:not(:disabled) { background: #dde5f7; color: #1446a0; }
-.reorder-btn:disabled { opacity: 0.35; cursor: default; }
+.remove-btn:hover { background: #f7dede; border-color: #e3a8a8; color: #b3453f; }
+
+.drag-handle {
+  background: #f1e4de;
+  color: #8c7568;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  touch-action: none;
+  cursor: grab;
+}
+.drag-handle:hover { background: #dde5f7; color: #1446a0; }
 .stop-order {
   background: #1446a0;
   color: #fff;
