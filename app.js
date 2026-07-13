@@ -216,7 +216,7 @@ function onDragPointerUp(e) {
   renderPlan();
 }
 
-const MAX_DETOUR_MILES = 6; // how much extra driving an unchecked ongoing sale can add and still get auto-suggested
+const MAX_DETOUR_MILES = 12; // how much extra driving an unchecked ongoing sale can add and still get auto-suggested
 
 /** One-click suggestion. The main sale always leads -- from there, every other checked stop
  *  gets inserted wherever it adds the least extra driving distance on the path back to your
