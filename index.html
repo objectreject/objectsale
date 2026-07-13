@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>objectsale</title>
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -44,8 +44,12 @@
   <div id="plan-section" style="display:none">
     <div class="plan-head">
       <h2>Your Plan</h2>
-      <button type="button" id="sort-btn" class="btn-sort" onclick="sortByDistance()" style="display:none">Sort by distance</button>
+      <div class="plan-head-actions">
+        <button type="button" id="suggest-btn" class="btn-sort" onclick="suggestRoute()" style="display:none">Suggest route</button>
+        <a id="maps-btn" class="btn-sort btn-maps" href="#" target="_blank" rel="noopener" style="display:none">Open in Google Maps</a>
+      </div>
     </div>
+    <p class="plan-hint">Tap ⭐ on the sale you're planning your day around — everything else gets routed around it.</p>
     <div id="plan-empty" class="empty-state">Check off sales below to add them to your plan.</div>
     <div id="plan-results"></div>
   </div>
@@ -61,6 +65,6 @@
 
 </div>
 
-<script src="app.js?v=6"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>

@@ -68,7 +68,8 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
 #status.error { color: #c0392b; }
 
 #plan-section, #browse-section { margin-bottom: 1.25rem; }
-.plan-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.6rem; }
+.plan-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.plan-head-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 #plan-section h2 {
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -76,6 +77,7 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
   color: #1446a0;
   margin: 0;
 }
+.plan-hint { font-size: 0.78rem; color: #8c7568; margin: 0 0 0.75rem; line-height: 1.5; }
 .btn-sort {
   background: transparent;
   border: 1px solid #1446a0;
@@ -84,8 +86,13 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
   font-weight: 600;
   padding: 0.3rem 0.65rem;
   border-radius: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 .btn-sort:hover { background: #eef2fa; }
+.btn-maps { background: #1446a0; color: #fff; border-color: #1446a0; }
+.btn-maps:hover { background: #0f367d; }
 
 #plan-results, #results { display: flex; flex-direction: column; gap: 0.75rem; }
 
@@ -102,6 +109,23 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
 
 .stop-head { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 0.4rem; }
 .stop-head-main { flex: 1; min-width: 0; }
+.anchor-btn {
+  background: #f1e4de;
+  border: 1px solid #ecdfd9;
+  color: #c9b8ae;
+  font-size: 0.85rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.anchor-btn:hover { border-color: #e0a94a; }
+.anchor-btn.active { background: #fbeed7; border-color: #e0a94a; color: #a3660c; }
+.stop-card.is-anchor { border-color: #e0a94a; box-shadow: 0 1px 3px rgba(224,169,74,0.15); }
 .stop-reorder { display: flex; flex-direction: column; gap: 0.15rem; flex-shrink: 0; }
 .reorder-btn {
   background: #f1e4de;
@@ -140,6 +164,7 @@ button { cursor: pointer; font-family: inherit; border: none; border-radius: 6px
 .tag.drive { background: #e3e9f7; color: #1446a0; }
 .tag.ongoing { background: #f1e4de; color: #8c7568; }
 .tag.dated { background: #dde5f7; color: #1446a0; }
+.tag.anchor { background: #fbeed7; color: #a3660c; font-weight: 700; }
 
 .stop-address { font-size: 0.85rem; color: #5a4c44; margin-bottom: 0.3rem; }
 .stop-address a { color: #1446a0; text-decoration: none; }

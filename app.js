@@ -6,6 +6,7 @@ let origin = null;
 let weekendStops = [];
 let ongoingStops = [];
 let planOrder = []; // sale ids, in the order they were added to the plan
+let anchorId = null; // the "big sale" the day is planned around
 
 async function init() {
   const dateInput = document.getElementById('date-input');
@@ -93,6 +94,7 @@ async function findSales() {
   }
 
   planOrder = [];
+  anchorId = null;
 
   setStatus('');
   document.getElementById('plan-section').style.display = '';
@@ -119,14 +121,26 @@ function eligibleStop(sale, dateStr, weekday) {
 function toggleStop(id, checked) {
   if (checked) {
     if (!planOrder.includes(id)) planOrder.push(id);
+    // Default the day's "big sale" anchor to the first dated/weekend sale added --
+    // that's usually the trip you're planning around; ongoing sales get peppered in around it.
+    if (!anchorId) {
+      const stop = stopsById().get(id);
+      if (stop && !stop.isOngoing) anchorId = id;
+    }
   } else {
     planOrder = planOrder.filter(x => x !== id);
+    if (anchorId === id) anchorId = planOrder.find(pid => !stopsById().get(pid).isOngoing) || null;
   }
   renderPlan();
   // Keep the checked/unchecked visual state of rows in sync without a full re-render.
   document.querySelectorAll(`input[data-sale-id="${id}"]`).forEach(input => {
     input.closest('.pick-row').classList.toggle('checked', checked);
   });
+}
+
+function setAnchor(id) {
+  anchorId = id;
+  renderPlan();
 }
 
 function moveStop(id, direction) {
@@ -137,12 +151,53 @@ function moveStop(id, direction) {
   renderPlan();
 }
 
-/** One-click suggestion: reorders the current plan by greedy nearest-neighbor from origin. */
-function sortByDistance() {
+/** One-click suggestion. If a "big sale" anchor is set, builds a there-and-back loop from
+ *  origin through the anchor, inserting every other stop wherever it adds the least extra
+ *  driving distance -- so smaller sales get peppered in on the way out or the way home,
+ *  whichever is cheaper. Falls back to plain nearest-neighbor if there's no anchor. */
+function suggestRoute() {
   const byId = stopsById();
   const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
-  planOrder = buildRoute(origin, selected).map(s => s.sale.id);
+  if (selected.length < 2) return;
+
+  const anchor = selected.find(s => s.sale.id === anchorId);
+  const ordered = anchor
+    ? cheapestInsertionLoop(origin, anchor, selected.filter(s => s.sale.id !== anchorId))
+    : buildRoute(origin, selected);
+
+  planOrder = ordered.map(s => s.sale.id);
   renderPlan();
+}
+
+/** Cheapest-insertion heuristic for a round trip: start with the loop
+ *  origin -> anchor -> origin, then repeatedly insert whichever remaining stop/edge
+ *  combination adds the least extra distance, until every stop is placed. */
+function cheapestInsertionLoop(origin, anchor, others) {
+  const originPoint = { lat: origin.lat, lng: origin.lng, isOrigin: true };
+  const path = [originPoint, anchor, originPoint];
+  const pointOf = node => node.isOrigin ? node : { lat: node.sale.lat, lng: node.sale.lng };
+
+  const remaining = others.slice();
+  while (remaining.length) {
+    let bestStopIdx = 0, bestPathIdx = 1, bestCost = Infinity;
+    remaining.forEach((stop, stopIdx) => {
+      for (let i = 0; i < path.length - 1; i++) {
+        const a = pointOf(path[i]);
+        const b = pointOf(path[i + 1]);
+        const s = pointOf(stop);
+        const cost = haversineMiles(a, s) + haversineMiles(s, b) - haversineMiles(a, b);
+        if (cost < bestCost) {
+          bestCost = cost;
+          bestPathIdx = i + 1;
+          bestStopIdx = stopIdx;
+        }
+      }
+    });
+    path.splice(bestPathIdx, 0, remaining[bestStopIdx]);
+    remaining.splice(bestStopIdx, 1);
+  }
+
+  return path.slice(1, -1); // drop the origin sentinels at each end
 }
 
 function stopsById() {
@@ -200,18 +255,22 @@ function renderPlan() {
   const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
   const emptyEl = document.getElementById('plan-empty');
   const resultsEl = document.getElementById('plan-results');
-  const sortBtn = document.getElementById('sort-btn');
+  const suggestBtn = document.getElementById('suggest-btn');
+  const mapsBtn = document.getElementById('maps-btn');
 
   if (!selected.length) {
     emptyEl.style.display = '';
     emptyEl.textContent = 'Check off sales below to add them to your plan.';
     resultsEl.innerHTML = '';
-    sortBtn.style.display = 'none';
+    suggestBtn.style.display = 'none';
+    mapsBtn.style.display = 'none';
     return;
   }
 
   emptyEl.style.display = 'none';
-  sortBtn.style.display = selected.length > 1 ? '' : 'none';
+  suggestBtn.style.display = selected.length > 1 ? '' : 'none';
+  mapsBtn.style.display = '';
+  mapsBtn.href = googleMapsUrl(selected);
 
   // Plan order follows the order stops were added (or manually rearranged) --
   // just annotate each stop with the straight-line distance from whatever came before it.
@@ -224,6 +283,17 @@ function renderPlan() {
 
   resultsEl.innerHTML = annotated.map((stop, i) =>
     stopCardHTML(stop, i + 1, i === 0, i === annotated.length - 1)).join('');
+}
+
+/** Builds a Google Maps multi-stop directions link following the current plan order. */
+function googleMapsUrl(selected) {
+  const addressOf = stop => `${stop.sale.address || ''} ${stop.sale.city} CA`;
+  const originParam = encodeURIComponent(`${origin.lat},${origin.lng}`);
+  const destination = encodeURIComponent(addressOf(selected[selected.length - 1]));
+  const waypoints = selected.slice(0, -1).map(s => encodeURIComponent(addressOf(s))).join('|');
+  let url = `https://www.google.com/maps/dir/?api=1&origin=${originParam}&destination=${destination}&travelmode=driving`;
+  if (waypoints) url += `&waypoints=${waypoints}`;
+  return url;
 }
 
 /** Greedy nearest-neighbor from origin, straight-line distance only -- used by the
@@ -270,8 +340,12 @@ function stopCardHTML(stop, order, isFirst, isLast) {
   const sale = stop.sale;
   const title = stop.headline || sale.venue || sale.city;
   const mapsQuery = encodeURIComponent(`${sale.address || ''} ${sale.city} CA`);
+  const isAnchor = sale.id === anchorId;
   const tags = [];
 
+  if (isAnchor) {
+    tags.push(`<span class="tag anchor">⭐ Big sale</span>`);
+  }
   tags.push(stop.isOngoing
     ? `<span class="tag ongoing">Ongoing</span>`
     : `<span class="tag dated">${formatDateRange(stop.occurrence.start, stop.occurrence.end)}</span>`);
@@ -294,13 +368,15 @@ function stopCardHTML(stop, order, isFirst, isLast) {
     : '';
 
   return `
-    <div class="stop-card ${stop.isOngoing ? 'ongoing-only' : ''}">
+    <div class="stop-card ${stop.isOngoing ? 'ongoing-only' : ''} ${isAnchor ? 'is-anchor' : ''}">
       <div class="stop-head">
         <div class="stop-order">${order}</div>
         <div class="stop-head-main">
           <div class="stop-title">${escapeHTML(title)}</div>
           <div class="stop-city">${escapeHTML(sale.city)}</div>
         </div>
+        <button type="button" class="anchor-btn ${isAnchor ? 'active' : ''}" onclick="setAnchor('${sale.id}')"
+          aria-label="Make this the big sale you're planning around" title="Plan the day around this sale">⭐</button>
         <div class="stop-reorder">
           <button type="button" class="reorder-btn" onclick="moveStop('${sale.id}', -1)" ${isFirst ? 'disabled' : ''} aria-label="Move up">▲</button>
           <button type="button" class="reorder-btn" onclick="moveStop('${sale.id}', 1)" ${isLast ? 'disabled' : ''} aria-label="Move down">▼</button>
