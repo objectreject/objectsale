@@ -6,7 +6,7 @@ let origin = null;
 let weekendStops = [];
 let ongoingStops = [];
 let planOrder = []; // sale ids, in the order they were added to the plan
-let anchorId = null; // the "big sale" the day is planned around
+let anchorId = null; // the "main sale" the day is planned around
 
 async function init() {
   const dateInput = document.getElementById('date-input');
@@ -121,11 +121,15 @@ function eligibleStop(sale, dateStr, weekday) {
 function toggleStop(id, checked) {
   if (checked) {
     if (!planOrder.includes(id)) planOrder.push(id);
-    // Default the day's "big sale" anchor to the first dated/weekend sale added --
+    // Default the day's "main sale" anchor to the first dated/weekend sale added --
     // that's usually the trip you're planning around; ongoing sales get peppered in around it.
     if (!anchorId) {
       const stop = stopsById().get(id);
-      if (stop && !stop.isOngoing) anchorId = id;
+      if (stop && !stop.isOngoing) {
+        anchorId = id;
+        planOrder = planOrder.filter(x => x !== id);
+        planOrder.unshift(id);
+      }
     }
   } else {
     planOrder = planOrder.filter(x => x !== id);
@@ -140,7 +144,15 @@ function toggleStop(id, checked) {
 
 function setAnchor(id) {
   anchorId = id;
+  planOrder = [id, ...planOrder.filter(x => x !== id)];
   renderPlan();
+}
+
+/** The main sale always leads the plan -- pin it to the front before every render. */
+function pinAnchorFirst() {
+  if (anchorId && planOrder.includes(anchorId)) {
+    planOrder = [anchorId, ...planOrder.filter(x => x !== anchorId)];
+  }
 }
 
 function removeStop(id) {
@@ -161,7 +173,7 @@ function attachPlanDragHandlers() {
 
 function onDragPointerDown(e) {
   const handle = e.target.closest('.drag-handle');
-  if (!handle) return;
+  if (!handle || handle.dataset.saleId === anchorId) return;
   const card = handle.closest('.stop-card');
   const container = document.getElementById('plan-results');
   const cards = Array.from(container.querySelectorAll('.stop-card'));
@@ -204,10 +216,10 @@ function onDragPointerUp(e) {
   renderPlan();
 }
 
-/** One-click suggestion. If a "big sale" anchor is set, builds a there-and-back loop from
- *  origin through the anchor, inserting every other stop wherever it adds the least extra
- *  driving distance -- so smaller sales get peppered in on the way out or the way home,
- *  whichever is cheaper. Falls back to plain nearest-neighbor if there's no anchor. */
+/** One-click suggestion. The main sale always leads -- from there, every other stop gets
+ *  inserted wherever it adds the least extra driving distance on the path back to your zip
+ *  code, so smaller/ongoing sales get peppered in on the way home. Falls back to plain
+ *  nearest-neighbor if there's no main sale set. */
 function suggestRoute() {
   const byId = stopsById();
   const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
@@ -215,19 +227,20 @@ function suggestRoute() {
 
   const anchor = selected.find(s => s.sale.id === anchorId);
   const ordered = anchor
-    ? cheapestInsertionLoop(origin, anchor, selected.filter(s => s.sale.id !== anchorId))
+    ? cheapestInsertionPath(anchor, origin, selected.filter(s => s.sale.id !== anchorId))
     : buildRoute(origin, selected);
 
   planOrder = ordered.map(s => s.sale.id);
   renderPlan();
 }
 
-/** Cheapest-insertion heuristic for a round trip: start with the loop
- *  origin -> anchor -> origin, then repeatedly insert whichever remaining stop/edge
- *  combination adds the least extra distance, until every stop is placed. */
-function cheapestInsertionLoop(origin, anchor, others) {
+/** Cheapest-insertion heuristic for an open path: the main sale is pinned first, home
+ *  (origin) is the fixed destination, and every remaining stop gets inserted at whichever
+ *  point along that path adds the least extra distance -- so it lands on the way out or the
+ *  way back, whichever is cheaper, but never ahead of the main sale. */
+function cheapestInsertionPath(anchor, origin, others) {
   const originPoint = { lat: origin.lat, lng: origin.lng, isOrigin: true };
-  const path = [originPoint, anchor, originPoint];
+  const path = [anchor, originPoint];
   const pointOf = node => node.isOrigin ? node : { lat: node.sale.lat, lng: node.sale.lng };
 
   const remaining = others.slice();
@@ -250,7 +263,7 @@ function cheapestInsertionLoop(origin, anchor, others) {
     remaining.splice(bestStopIdx, 1);
   }
 
-  return path.slice(1, -1); // drop the origin sentinels at each end
+  return path.slice(0, -1); // drop the origin sentinel at the end; anchor stays at index 0
 }
 
 function stopsById() {
@@ -304,6 +317,7 @@ function formatDateRange(startISO, endISO) {
 }
 
 function renderPlan() {
+  pinAnchorFirst();
   const byId = stopsById();
   const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
   const emptyEl = document.getElementById('plan-empty');
@@ -321,7 +335,7 @@ function renderPlan() {
   }
 
   emptyEl.style.display = 'none';
-  suggestBtn.style.display = selected.length > 1 ? '' : 'none';
+  suggestBtn.style.display = (anchorId || selected.length > 1) ? '' : 'none';
   mapsBtn.style.display = '';
   mapsBtn.href = googleMapsUrl(selected);
 
@@ -397,7 +411,7 @@ function stopCardHTML(stop, order) {
   const tags = [];
 
   if (isAnchor) {
-    tags.push(`<span class="tag anchor">⭐ Big sale</span>`);
+    tags.push(`<span class="tag anchor">★ Main sale</span>`);
   }
   tags.push(stop.isOngoing
     ? `<span class="tag ongoing">Ongoing</span>`
@@ -429,15 +443,16 @@ function stopCardHTML(stop, order) {
           <div class="stop-city">${escapeHTML(sale.city)}</div>
         </div>
         <button type="button" class="anchor-btn ${isAnchor ? 'active' : ''}" onclick="setAnchor('${sale.id}')"
-          aria-label="Make this the big sale you're planning around" title="Plan the day around this sale">⭐</button>
+          aria-label="Make this the main sale you're planning around" title="Plan the day around this sale">★</button>
         <button type="button" class="remove-btn" onclick="removeStop('${sale.id}')" aria-label="Remove from plan">✕</button>
+        ${isAnchor ? '' : `
         <button type="button" class="drag-handle" data-sale-id="${sale.id}" aria-label="Drag to reorder">
           <svg width="10" height="16" viewBox="0 0 10 16" fill="currentColor">
             <circle cx="2" cy="2" r="1.5"/><circle cx="8" cy="2" r="1.5"/>
             <circle cx="2" cy="8" r="1.5"/><circle cx="8" cy="8" r="1.5"/>
             <circle cx="2" cy="14" r="1.5"/><circle cx="8" cy="14" r="1.5"/>
           </svg>
-        </button>
+        </button>`}
       </div>
       <div class="stop-address">
         <a href="https://www.google.com/maps/search/?api=1&query=${mapsQuery}" target="_blank" rel="noopener">${escapeHTML(sale.address || sale.city)}</a>

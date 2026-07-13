@@ -46,6 +46,12 @@ body {
   font-family: inherit;
   outline: none;
   width: 100%;
+  height: 2.7rem;
+  line-height: 1.4;
+}
+.field input[type="date"], .field input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
 }
 .field input:focus, .field select:focus { border-color: #1446a0; }
 
