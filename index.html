@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>objectsale</title>
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -42,8 +42,11 @@
   <div id="status"></div>
 
   <div id="plan-section" style="display:none">
-    <h2>Your Plan</h2>
-    <div id="plan-empty" class="empty-state">Check off sales below to build your route.</div>
+    <div class="plan-head">
+      <h2>Your Plan</h2>
+      <button type="button" id="sort-btn" class="btn-sort" onclick="sortByDistance()" style="display:none">Sort by distance</button>
+    </div>
+    <div id="plan-empty" class="empty-state">Check off sales below to add them to your plan.</div>
     <div id="plan-results"></div>
   </div>
 
@@ -58,6 +61,6 @@
 
 </div>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

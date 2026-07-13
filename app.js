@@ -5,7 +5,7 @@ let salesData = null;
 let origin = null;
 let weekendStops = [];
 let ongoingStops = [];
-const selectedIds = new Set();
+let planOrder = []; // sale ids, in the order they were added to the plan
 
 async function init() {
   const dateInput = document.getElementById('date-input');
@@ -89,10 +89,7 @@ async function findSales() {
     return;
   }
 
-  // Default: all dated/weekend sales pre-selected as the must-visit core of the
-  // day; ongoing/recurring sales start unchecked as optional add-ons.
-  selectedIds.clear();
-  weekendStops.forEach(s => selectedIds.add(s.sale.id));
+  planOrder = [];
 
   setStatus('');
   document.getElementById('plan-section').style.display = '';
@@ -117,13 +114,38 @@ function eligibleStop(sale, dateStr, weekday) {
 }
 
 function toggleStop(id, checked) {
-  if (checked) selectedIds.add(id);
-  else selectedIds.delete(id);
+  if (checked) {
+    if (!planOrder.includes(id)) planOrder.push(id);
+  } else {
+    planOrder = planOrder.filter(x => x !== id);
+  }
   renderPlan();
   // Keep the checked/unchecked visual state of rows in sync without a full re-render.
   document.querySelectorAll(`input[data-sale-id="${id}"]`).forEach(input => {
     input.closest('.pick-row').classList.toggle('checked', checked);
   });
+}
+
+function moveStop(id, direction) {
+  const i = planOrder.indexOf(id);
+  const j = i + direction;
+  if (i < 0 || j < 0 || j >= planOrder.length) return;
+  [planOrder[i], planOrder[j]] = [planOrder[j], planOrder[i]];
+  renderPlan();
+}
+
+/** One-click suggestion: reorders the current plan by greedy nearest-neighbor from origin. */
+function sortByDistance() {
+  const byId = stopsById();
+  const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
+  planOrder = buildRoute(origin, selected).map(s => s.sale.id);
+  renderPlan();
+}
+
+function stopsById() {
+  const map = new Map();
+  weekendStops.concat(ongoingStops).forEach(s => map.set(s.sale.id, s));
+  return map;
 }
 
 function switchTab(name) {
@@ -144,7 +166,7 @@ function renderBrowseLists() {
 function pickRowHTML(stop) {
   const sale = stop.sale;
   const title = stop.headline || sale.venue || sale.city;
-  const checked = selectedIds.has(sale.id);
+  const checked = planOrder.includes(sale.id);
   const badge = stop.isOngoing
     ? '<span class="badge ongoing">Ongoing</span>'
     : `<span class="badge dated">${formatDateRange(stop.occurrence.start, stop.occurrence.end)}</span>`;
@@ -171,24 +193,38 @@ function formatDateRange(startISO, endISO) {
 }
 
 function renderPlan() {
-  const all = weekendStops.concat(ongoingStops);
-  const selected = all.filter(s => selectedIds.has(s.sale.id));
+  const byId = stopsById();
+  const selected = planOrder.map(id => byId.get(id)).filter(Boolean);
   const emptyEl = document.getElementById('plan-empty');
   const resultsEl = document.getElementById('plan-results');
+  const sortBtn = document.getElementById('sort-btn');
 
   if (!selected.length) {
     emptyEl.style.display = '';
-    emptyEl.textContent = 'Check off sales below to build your route.';
+    emptyEl.textContent = 'Check off sales below to add them to your plan.';
     resultsEl.innerHTML = '';
+    sortBtn.style.display = 'none';
     return;
   }
 
   emptyEl.style.display = 'none';
-  const route = buildRoute(origin, selected);
-  resultsEl.innerHTML = route.map((stop, i) => stopCardHTML(stop, i + 1)).join('');
+  sortBtn.style.display = selected.length > 1 ? '' : 'none';
+
+  // Plan order follows the order stops were added (or manually rearranged) --
+  // just annotate each stop with the straight-line distance from whatever came before it.
+  let current = origin;
+  const annotated = selected.map(stop => {
+    const distance = haversineMiles(current, { lat: stop.sale.lat, lng: stop.sale.lng });
+    current = { lat: stop.sale.lat, lng: stop.sale.lng };
+    return { ...stop, distanceFromPrev: distance };
+  });
+
+  resultsEl.innerHTML = annotated.map((stop, i) =>
+    stopCardHTML(stop, i + 1, i === 0, i === annotated.length - 1)).join('');
 }
 
-/** Greedy nearest-neighbor from origin, straight-line distance only. */
+/** Greedy nearest-neighbor from origin, straight-line distance only -- used by the
+ *  "Sort by distance" suggestion, not applied automatically. */
 function buildRoute(origin, candidates) {
   const remaining = candidates.slice();
   const route = [];
@@ -227,7 +263,7 @@ async function geocodeZip(zip) {
   return { lat: Number(place.latitude), lng: Number(place.longitude) };
 }
 
-function stopCardHTML(stop, order) {
+function stopCardHTML(stop, order, isFirst, isLast) {
   const sale = stop.sale;
   const title = stop.headline || sale.venue || sale.city;
   const mapsQuery = encodeURIComponent(`${sale.address || ''} ${sale.city} CA`);
@@ -258,9 +294,13 @@ function stopCardHTML(stop, order) {
     <div class="stop-card ${stop.isOngoing ? 'ongoing-only' : ''}">
       <div class="stop-head">
         <div class="stop-order">${order}</div>
-        <div>
+        <div class="stop-head-main">
           <div class="stop-title">${escapeHTML(title)}</div>
           <div class="stop-city">${escapeHTML(sale.city)}</div>
+        </div>
+        <div class="stop-reorder">
+          <button type="button" class="reorder-btn" onclick="moveStop('${sale.id}', -1)" ${isFirst ? 'disabled' : ''} aria-label="Move up">▲</button>
+          <button type="button" class="reorder-btn" onclick="moveStop('${sale.id}', 1)" ${isLast ? 'disabled' : ''} aria-label="Move down">▼</button>
         </div>
       </div>
       <div class="stop-address">
