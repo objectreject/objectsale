@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-12",
+  "scrapedAt": "2026-08-11",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -10,7 +10,30 @@
       "phone": "661-209-2014",
       "lat": 34.4819957,
       "lng": -118.1982049,
-      "occurrences": [],
+      "occurrences": [
+        {
+          "start": "2026-09-12",
+          "end": "2026-09-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            },
+            {
+              "day": "Sun",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sun 10-2"
+            }
+          ],
+          "notes": [
+            "3,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$2; Sun $2/bag"
+          ]
+        }
+      ],
       "ongoing": {
         "hours": [],
         "notes": [
@@ -27,20 +50,6 @@
       "lat": 33.831904,
       "lng": -117.918771,
       "occurrences": [
-        {
-          "start": "2026-07-17",
-          "end": "2026-07-17",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "11:00",
-              "close": "16:00",
-              "raw": "Friday 11-4"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-08-21",
           "end": "2026-08-21",
@@ -137,7 +146,7 @@
           ],
           "notes": [
             "Preview: Thu noon-6, Friends; join at door",
-            "100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$2; Mon half-price, Tue $5/bag, $10/box provided",
+            "100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$2; Sat half-price, Mon, Tue $5/bag, $10/box provided",
             "Credit cards accepted"
           ]
         }
@@ -158,34 +167,6 @@
       "lat": 35.3727112,
       "lng": -119.0100852,
       "occurrences": [
-        {
-          "start": "2026-08-07",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "11:00",
-              "close": "17:30",
-              "raw": "Fri 11-5:30"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "15:30",
-              "raw": "Sat 10-3:30"
-            },
-            {
-              "day": "Fri",
-              "open": "10:00",
-              "close": "23:00",
-              "raw": "Preview: Fri 10-11"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions"
-          ]
-        },
         {
           "start": "2026-10-16",
           "end": "2026-10-17",
@@ -218,6 +199,42 @@
       "ongoing": null
     },
     {
+      "id": "X11344",
+      "city": "Canyon Country",
+      "venue": "Canyon Country Library",
+      "address": "18601 Soledad Canyon Rd",
+      "phone": "661-251-2720",
+      "lat": 34.4164602,
+      "lng": -118.4590695,
+      "occurrences": [
+        {
+          "start": "2026-08-08",
+          "end": "2026-08-16",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in bookstore"
+          ]
+        },
+        {
+          "start": "2026-11-14",
+          "end": "2026-11-22",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in bookstore"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours",
+          "Thousands of books"
+        ]
+      }
+    },
+    {
       "id": "X11973",
       "city": "Chatsworth",
       "venue": "Chatsworth Branch Library",
@@ -226,28 +243,6 @@
       "lat": 34.2569724,
       "lng": -118.592637,
       "occurrences": [
-        {
-          "start": "2026-07-18",
-          "end": "2026-07-18",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            },
-            {
-              "day": "Fri",
-              "open": "02:00",
-              "close": "16:00",
-              "raw": "Preview: Fri 2-4pm"
-            }
-          ],
-          "notes": [
-            "5,000 books; 85% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; plus CDs, DVDs, books on CD; paperbacks .50; hardcovers $1; children's .50, 3/$1; music CDs .50, DVDs, books on CD $1"
-          ]
-        },
         {
           "start": "2026-10-17",
           "end": "2026-10-17",
@@ -272,45 +267,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X6629",
-      "city": "Chino Hills",
-      "venue": "Chino Hills Branch Library",
-      "address": "14020 City Center Dr",
-      "phone": "909-590-5380",
-      "lat": 33.9975827,
-      "lng": -117.7306749,
-      "occurrences": [
-        {
-          "start": "2026-08-08",
-          "end": "2026-08-09",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "17:00",
-              "raw": "Sat 9-5"
-            },
-            {
-              "day": "Sun",
-              "open": "01:00",
-              "close": "17:00",
-              "raw": "Sun 1-5"
-            }
-          ],
-          "notes": [
-            "3,000 books; 50% donated; 65% hardcover; sorted; not 'picked over' ; no buyer restrictions ; individually priced or $5/bag (paper grocery bag provided or bring similar bag)"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours"
-        ]
-      }
     },
     {
       "id": "X1078",
@@ -379,16 +335,6 @@
       "lng": -117.4350528,
       "occurrences": [
         {
-          "start": "2026-07-31",
-          "end": "2026-08-02",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sale in the Bookstore",
-            "1,000 books; 100% donated; sorted; no buyer restrictions"
-          ]
-        },
-        {
           "start": "2026-10-02",
           "end": "2026-10-04",
           "headline": null,
@@ -428,6 +374,33 @@
       }
     },
     {
+      "id": "X7366",
+      "city": "Gardena",
+      "venue": "Gardena Mayme Dear Library",
+      "address": "1731 W. Gardena Blvd",
+      "phone": "310-738-8319",
+      "lat": 33.8821904,
+      "lng": -118.3075839,
+      "occurrences": [
+        {
+          "start": "2026-08-15",
+          "end": "2026-08-15",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "500+ books; 100% donated; 85% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $5/bag (bags provided)"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
+        ]
+      }
+    },
+    {
       "id": "X10101",
       "city": "Grover Beach",
       "venue": "Grover Beach Community Library",
@@ -436,22 +409,6 @@
       "lat": 35.1231841,
       "lng": -120.6202277,
       "occurrences": [
-        {
-          "start": "2026-08-08",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "15:00",
-              "raw": "Sat 9-3"
-            }
-          ],
-          "notes": [
-            "2,000 books; 80% donated; 30% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1/inch"
-          ]
-        },
         {
           "start": "2026-10-10",
           "end": "2026-10-10",
@@ -470,6 +427,53 @@
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X7269",
+      "city": "Irvine",
+      "venue": "Heritage Park Library",
+      "address": "14361 Yale Ave",
+      "phone": "949-949-2886",
+      "lat": 33.6996126,
+      "lng": -117.7784034,
+      "occurrences": [
+        {
+          "start": "2026-08-29",
+          "end": "2026-08-29",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:00",
+              "close": "14:00",
+              "raw": "Sat 9-2"
+            }
+          ],
+          "notes": [
+            "6,000 books; 100% donated; 65% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Thu",
+            "open": "11:00",
+            "close": "17:00",
+            "raw": "Mon-Thu 11-5"
+          },
+          {
+            "day": "Sat",
+            "open": "10:00",
+            "close": "16:00",
+            "raw": "Sat 10-4"
+          }
+        ],
+        "notes": [
+          "4,000 books; paperbacks .50; hardcovers $1; newer books $2.50",
+          "Some books removed to sell online"
+        ]
+      }
     },
     {
       "id": "X8191",
@@ -502,22 +506,6 @@
       "lng": -117.7169451,
       "occurrences": [
         {
-          "start": "2026-08-08",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
-          ]
-        },
-        {
           "start": "2026-11-14",
           "end": "2026-11-14",
           "headline": null,
@@ -530,21 +518,33 @@
             }
           ],
           "notes": [
-            "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
+            ".25-.50 plus holiday books $1-$20"
           ]
         }
       ],
       "ongoing": {
         "hours": [
           {
+            "day": "Thu",
+            "open": "10:15",
+            "close": "18:00",
+            "raw": "Mon-Thu 10:15 - 6; Fri"
+          },
+          {
             "day": "Sat",
-            "open": "10:00",
-            "close": "14:00",
-            "raw": "Sat 10-2"
+            "open": "10:15",
+            "close": "16:00",
+            "raw": "Sat 10:15-4"
+          },
+          {
+            "day": "Sun",
+            "open": "01:00",
+            "close": "16:00",
+            "raw": "Sun 1-4"
           }
         ],
         "notes": [
-          ".25-.50 plus holiday books $1-$20"
+          "Bookstore with occasional special Saturday sales"
         ]
       }
     },
@@ -557,35 +557,6 @@
       "lat": 34.6537582,
       "lng": -120.4520495,
       "occurrences": [
-        {
-          "start": "2026-07-17",
-          "end": "2026-07-18",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "10:00",
-              "close": "18:00",
-              "raw": "Fri 10-6"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "15:00",
-              "raw": "Sat 10-3"
-            },
-            {
-              "day": "Thu",
-              "open": "05:00",
-              "close": "19:00",
-              "raw": "Preview: Thu 5-7"
-            }
-          ],
-          "notes": [
-            "6,000 books; 100% donated; 20% hardcover; sorted; Preview and Friday: $1 per inch; Sat $5/plastic grocery bag (provided)",
-            "Some books removed"
-          ]
-        },
         {
           "start": "2026-10-23",
           "end": "2026-10-24",
@@ -632,22 +603,6 @@
       "lat": 34.050071,
       "lng": -118.2438831,
       "occurrences": [
-        {
-          "start": "2026-07-25",
-          "end": "2026-07-25",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Sat 1-4"
-            }
-          ],
-          "notes": [
-            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
-          ]
-        },
         {
           "start": "2026-08-29",
           "end": "2026-08-29",
@@ -741,16 +696,6 @@
       "lng": -118.3334162,
       "occurrences": [
         {
-          "start": "2026-08-07",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Fri, Sat noon-4",
-            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
-          ]
-        },
-        {
           "start": "2026-09-04",
           "end": "2026-09-05",
           "headline": null,
@@ -803,23 +748,6 @@
       "lng": -118.2803913,
       "occurrences": [
         {
-          "start": "2026-08-01",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Sat 1-4"
-            }
-          ],
-          "notes": [
-            "2,000 books; sorted; not 'picked over' ; no buyer restrictions ; $1-$3",
-            "Credit cards accepted"
-          ]
-        },
-        {
           "start": "2026-10-03",
           "end": "2026-10-03",
           "headline": null,
@@ -848,16 +776,6 @@
       "lat": 34.0671091,
       "lng": -118.2574018,
       "occurrences": [
-        {
-          "start": "2026-07-18",
-          "end": "2026-07-18",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
-          ]
-        },
         {
           "start": "2026-08-15",
           "end": "2026-08-15",
@@ -920,22 +838,6 @@
       "lat": 34.0149216,
       "lng": -118.355455,
       "occurrences": [
-        {
-          "start": "2026-08-01",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "13:00",
-              "raw": "Sat 10-1"
-            }
-          ],
-          "notes": [
-            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
-          ]
-        },
         {
           "start": "2026-09-05",
           "end": "2026-09-05",
@@ -1035,16 +937,6 @@
       "lat": 34.1055614,
       "lng": -118.2874231,
       "occurrences": [
-        {
-          "start": "2026-07-25",
-          "end": "2026-07-25",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "9:30-2:30",
-            "100% donated; 50% hardcover; sorted; .25-$1"
-          ]
-        },
         {
           "start": "2026-08-29",
           "end": "2026-08-29",
@@ -1289,6 +1181,60 @@
       }
     },
     {
+      "id": "X9851",
+      "city": "Newhall (Santa Clarita)",
+      "venue": "Newhall Library \u2014 held at Old Town Newhall",
+      "address": "24500 Main St.",
+      "phone": "661-259-0750",
+      "lat": 34.3818781,
+      "lng": -118.5295153,
+      "occurrences": [
+        {
+          "start": "2026-08-08",
+          "end": "2026-08-16",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sale in bookstore $7/bag"
+          ]
+        },
+        {
+          "start": "2026-11-14",
+          "end": "2026-11-22",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sale in bookstore $7/bag"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Thu",
+            "open": "09:00",
+            "close": "20:00",
+            "raw": "Mon-Thu 9-8"
+          },
+          {
+            "day": "Fri",
+            "open": "10:00",
+            "close": "17:00",
+            "raw": "Fri 10-5"
+          },
+          {
+            "day": "Sun",
+            "open": "01:00",
+            "close": "17:00",
+            "raw": "Sun 1-5"
+          }
+        ],
+        "notes": [
+          "Thousands of books; 100% donated; 80% hardcover; sorted; .25-$2"
+        ]
+      }
+    },
+    {
       "id": "X1524",
       "city": "Newport Beach",
       "venue": "Newport Beach Public Library",
@@ -1344,29 +1290,6 @@
       "lng": -118.3794033,
       "occurrences": [
         {
-          "start": "2026-07-18",
-          "end": "2026-07-18",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:00",
-              "close": "15:00",
-              "raw": "Sat 11-3"
-            },
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "23:00",
-              "raw": "Preview: Sat 9:30-11"
-            }
-          ],
-          "notes": [
-            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1",
-            "Credit cards accepted"
-          ]
-        },
-        {
           "start": "2026-10-17",
           "end": "2026-10-17",
           "headline": null,
@@ -1400,7 +1323,54 @@
       "phone": null,
       "lat": 33.7883082,
       "lng": -117.8497096,
-      "occurrences": [],
+      "occurrences": [
+        {
+          "start": "2026-09-12",
+          "end": "2026-09-30",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:00",
+              "close": "13:00",
+              "raw": "Sat 11-1"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "23:00",
+              "raw": "Preview: Sat 10-11"
+            }
+          ],
+          "notes": [
+            "2,000 books; 69% donated; sorted; no buyer restrictions ; $5/bag (provided)",
+            "Some books removed to sell online"
+          ]
+        },
+        {
+          "start": "2026-12-05",
+          "end": "2026-12-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:00",
+              "close": "13:00",
+              "raw": "Sat 11-1"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "23:00",
+              "raw": "Preview: Sat 10-11"
+            }
+          ],
+          "notes": [
+            "2,000 books; 69% donated; sorted; no buyer restrictions ; $5/bag (provided)",
+            "Some books removed to sell online"
+          ]
+        }
+      ],
       "ongoing": {
         "hours": [],
         "notes": [
@@ -1419,23 +1389,6 @@
       "lat": 33.7988309,
       "lng": -118.3892081,
       "occurrences": [
-        {
-          "start": "2026-07-17",
-          "end": "2026-07-18",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Sat 10-5"
-            }
-          ],
-          "notes": [
-            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
-            "More valuable books removed to sell online"
-          ]
-        },
         {
           "start": "2026-08-21",
           "end": "2026-08-22",
@@ -1598,28 +1551,6 @@
       "lng": -117.1835214,
       "occurrences": [
         {
-          "start": "2026-08-01",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:30",
-              "close": "16:30",
-              "raw": "Sat 11:30-4:30"
-            },
-            {
-              "day": "Sat",
-              "open": "10:30",
-              "close": "23:30",
-              "raw": "Preview: Sat 10:30-11:30 Friends only"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
-          ]
-        },
-        {
           "start": "2026-09-05",
           "end": "2026-09-05",
           "headline": null,
@@ -1738,17 +1669,6 @@
       "lng": -117.4123324,
       "occurrences": [
         {
-          "start": "2026-08-08",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
-            "Cash only; please bring small bills/change, please bring your own bags"
-          ]
-        },
-        {
           "start": "2026-09-12",
           "end": "2026-09-12",
           "headline": null,
@@ -1813,29 +1733,6 @@
       "lng": -117.0405989,
       "occurrences": [
         {
-          "start": "2026-08-01",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "15:00",
-              "raw": "Sat 9:30-3"
-            },
-            {
-              "day": "Fri",
-              "open": "01:00",
-              "close": "15:00",
-              "raw": "Preview: Fri 1-3pm"
-            }
-          ],
-          "notes": [
-            "10,000+ books; not 'picked over' ; paperbacks .50; hardcovers $1-$2; trade pb $1; children's .50, 3/$1; Some specials. A/V $1",
-            "Sale goes on -- rain or shine"
-          ]
-        },
-        {
           "start": "2026-09-05",
           "end": "2026-09-05",
           "headline": null,
@@ -1854,8 +1751,8 @@
             }
           ],
           "notes": [
-            "10,000+ books; not 'picked over' ; paperbacks .50; hardcovers $1-$2; trade pb $1; children's .50, 3/$1; Some specials. A/V $1",
-            "Sale goes on -- rain or shine"
+            "10,000+ books; $1",
+            "Books scanned to sell online"
           ]
         },
         {
@@ -1877,8 +1774,8 @@
             }
           ],
           "notes": [
-            "10,000+ books; not 'picked over' ; paperbacks .50; hardcovers $1-$2; trade pb $1; children's .50, 3/$1; Some specials. A/V $1",
-            "Sale goes on -- rain or shine"
+            "10,000+ books; $1",
+            "Books scanned to sell online"
           ]
         },
         {
@@ -1900,8 +1797,8 @@
             }
           ],
           "notes": [
-            "10,000+ books; not 'picked over' ; paperbacks .50; hardcovers $1-$2; trade pb $1; children's .50, 3/$1; Some specials. A/V $1",
-            "Sale goes on -- rain or shine"
+            "10,000+ books; $1",
+            "Books scanned to sell online"
           ]
         },
         {
@@ -1923,8 +1820,8 @@
             }
           ],
           "notes": [
-            "10,000+ books; not 'picked over' ; paperbacks .50; hardcovers $1-$2; trade pb $1; children's .50, 3/$1; Some specials. A/V $1",
-            "Sale goes on -- rain or shine"
+            "10,000+ books; $1",
+            "Books scanned to sell online"
           ]
         }
       ],
@@ -1939,16 +1836,6 @@
       "lat": 32.8208823,
       "lng": -117.0980871,
       "occurrences": [
-        {
-          "start": "2026-07-31",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Fri, Sa5 10-5",
-            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
-          ]
-        },
         {
           "start": "2026-09-04",
           "end": "2026-09-05",
@@ -2002,16 +1889,6 @@
       "lng": -117.126847,
       "occurrences": [
         {
-          "start": "2026-08-01",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
-          ]
-        },
-        {
           "start": "2026-09-05",
           "end": "2026-09-05",
           "headline": null,
@@ -2063,20 +1940,6 @@
       "lat": 32.7089055,
       "lng": -117.1541411,
       "occurrences": [
-        {
-          "start": "2026-08-08",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "16:00",
-              "raw": "Sat 10-4"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-09-12",
           "end": "2026-09-12",
@@ -2156,20 +2019,6 @@
       "lng": -117.162772,
       "occurrences": [
         {
-          "start": "2026-08-06",
-          "end": "2026-08-06",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Thu",
-              "open": "03:00",
-              "close": "19:00",
-              "raw": "Thu 3-7pm"
-            }
-          ],
-          "notes": []
-        },
-        {
           "start": "2026-09-03",
           "end": "2026-09-03",
           "headline": null,
@@ -2237,20 +2086,6 @@
       "lat": 32.8208823,
       "lng": -117.0980871,
       "occurrences": [
-        {
-          "start": "2026-07-31",
-          "end": "2026-08-03",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Sat 10-5"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-09-04",
           "end": "2026-09-07",
@@ -2359,6 +2194,36 @@
       }
     },
     {
+      "id": "X7742",
+      "city": "Santa Barbara",
+      "venue": "Planned Parenthood California Central Coast \u2014 at Earl Warren Showgrounds \u2014 In the Exhibition Hall (the round building)",
+      "address": "3400 Calle Real",
+      "phone": "805-722-7870",
+      "lat": 34.430073,
+      "lng": -119.736277,
+      "occurrences": [
+        {
+          "start": "2026-09-10",
+          "end": "2026-09-20",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Join us for the 52 nd annual Mary Jane McCord Planned Parenthood Book Sale 150,000+ Books at great prices We also have finyl, CDs, DVDs, games Puzzles and more!",
+            "September 10-20, 2026",
+            "Opening Night : September 10",
+            "Thursday, 4 pm to 7 pm $30 Admission (opening night preview sale only) Purchase tickets on our Website Here For Thursday preview sale we will hand out numbers to hold your place in line beginning at noon Dealers, bring your resale number to avoid payment of sales tax",
+            "FREE Admission : September 11 to 20 Friday, Saturday and Sunday, 10 am-7 pm Monday, Noon - 7 pm Tuesday to Friday, noon-6 pm Saturday, 10 am-6 pm Sunday, September 20, 10 am-6 pm 50% OFF",
+            "Our books are clean, curated, and quality!",
+            "Books sorted into over 55 popular categories - easy to find the items you want!",
+            "Specials category with rare and antiquarian books",
+            "We accept credit cards",
+            "For more information or to buy opening night tickets, and sponsorships, visit the website booksale.ppcentralcoast.org"
+          ]
+        }
+      ],
+      "ongoing": null
+    },
+    {
       "id": "X7439",
       "city": "Santa Paula",
       "venue": "Blanchard Community Library",
@@ -2367,22 +2232,6 @@
       "lat": 34.3541659,
       "lng": -119.0592705,
       "occurrences": [
-        {
-          "start": "2026-08-01",
-          "end": "2026-08-01",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
-          ]
-        },
         {
           "start": "2026-09-05",
           "end": "2026-09-05",
@@ -2465,28 +2314,6 @@
       "lat": 34.1512227,
       "lng": -118.4436874,
       "occurrences": [
-        {
-          "start": "2026-08-08",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "13:30",
-              "raw": "Sat 9:30-1:30"
-            },
-            {
-              "day": "Fri",
-              "open": "03:30",
-              "close": "17:00",
-              "raw": "Preview: Fri 3:30-5; Friends only"
-            }
-          ],
-          "notes": [
-            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
-          ]
-        },
         {
           "start": "2026-09-12",
           "end": "2026-09-12",
@@ -2582,34 +2409,11 @@
       "id": "X10540",
       "city": "Sierra Madre",
       "venue": "Sierra Madre Library",
-      "address": "350 W Sierra Madre Blvd",
+      "address": "440 W Sierra Madre Blvd",
       "phone": "626-355-7186",
-      "lat": 34.1617686,
-      "lng": -118.0601957,
+      "lat": 34.161758,
+      "lng": -118.0618271,
       "occurrences": [
-        {
-          "start": "2026-08-07",
-          "end": "2026-08-08",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "03:00",
-              "close": "19:00",
-              "raw": "Fri 3-7pm"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "2,000+ books; 80% donated; 50% hardcover; sorted; no buyer restrictions ; $1-$15; Sat $5/bag",
-            "A few vintage books are listed online"
-          ]
-        },
         {
           "start": "2026-10-02",
           "end": "2026-10-03",
@@ -2673,29 +2477,6 @@
       "lat": 34.1506467,
       "lng": -118.4055941,
       "occurrences": [
-        {
-          "start": "2026-07-25",
-          "end": "2026-07-25",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "12:30",
-              "raw": "Sat 9:30-12:30"
-            },
-            {
-              "day": "Sat",
-              "open": "08:30",
-              "close": "21:30",
-              "raw": "Preview: Sat 8:30-9:30"
-            }
-          ],
-          "notes": [
-            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
-            "Please bring your own boxes and bags"
-          ]
-        },
         {
           "start": "2026-08-29",
           "end": "2026-08-29",
@@ -2809,6 +2590,58 @@
           "notes": [
             "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
             "Please bring your own boxes and bags"
+          ]
+        }
+      ],
+      "ongoing": null
+    },
+    {
+      "id": "X9746",
+      "city": "Tarzana",
+      "venue": "Encino-Tarzana Branch Library",
+      "address": "18231 Ventura Blvd",
+      "phone": "818-343-1983",
+      "lat": 34.166392,
+      "lng": -118.52986,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours",
+          "2,000 books; 80% donated; 50% hardcover; sorted; .50-$1"
+        ]
+      }
+    },
+    {
+      "id": "X14009",
+      "city": "Tehachapi",
+      "venue": "Tehachapi Public Library",
+      "address": "212 S. Green St.",
+      "phone": "949-370-6444",
+      "lat": 35.1305065,
+      "lng": -118.447576,
+      "occurrences": [
+        {
+          "start": "2026-08-13",
+          "end": "2026-08-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "04:00",
+              "close": "19:00",
+              "raw": "Thu 4-7"
+            },
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "16:00",
+              "raw": "Preview: Thu 3-4"
+            }
+          ],
+          "notes": [
+            "1,500+ books; 100% donated; 100% hardcover; sorted; $5/bag",
+            "Credit cards accepted."
           ]
         }
       ],
@@ -2955,6 +2788,36 @@
           "Library hours"
         ]
       }
+    },
+    {
+      "id": "X14336",
+      "city": "Ventura",
+      "venue": "Ventura Friends of the Library \u2014 held at:",
+      "address": "6040 Telegraph Rd",
+      "phone": "805-223-1187",
+      "lat": 34.2768324,
+      "lng": -119.2125932,
+      "occurrences": [
+        {
+          "start": "2026-08-15",
+          "end": "2026-08-15",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "15:00",
+              "raw": "Sat 10-3"
+            }
+          ],
+          "notes": [
+            "1,000 books; 50% donated; sorted; no buyer restrictions ; .50-$5",
+            "Some books sold online",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": null
     }
   ]
 }

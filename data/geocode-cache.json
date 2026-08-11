@@ -23,6 +23,7 @@
     "lat": 34.3541659,
     "lng": -119.0592705
   },
+  "12002 Osborne St, Lake View Terrace, CA": null,
   "12006 Venice Blvd, Los Angeles (Mar Vista), CA": {
     "lat": 34.0058446,
     "lng": -118.4289671
@@ -59,9 +60,25 @@
     "lat": 34.1512227,
     "lng": -118.4436874
   },
+  "14361 Yale Ave, Irvine, CA": {
+    "lat": 33.6996126,
+    "lng": -117.7784034
+  },
   "1500 East Villa St., Pasadena, CA": {
     "lat": 34.154263,
     "lng": -118.119745
+  },
+  "1731 W. Gardena Blvd, Gardena, CA": {
+    "lat": 33.8821904,
+    "lng": -118.3075839
+  },
+  "18231 Ventura Blvd, Tarzana, CA": {
+    "lat": 34.166392,
+    "lng": -118.52986
+  },
+  "18601 Soledad Canyon Rd, Canyon Country, CA": {
+    "lat": 34.4164602,
+    "lng": -118.4590695
   },
   "1874 N. Hillhurst Ave., Los Angeles (Los Feliz), CA": {
     "lat": 34.1055614,
@@ -75,6 +92,10 @@
     "lat": 34.2569724,
     "lng": -118.592637
   },
+  "212 S. Green St., Tehachapi, CA": {
+    "lat": 35.1305065,
+    "lng": -118.447576
+  },
   "2211 W Jefferson Blvd, Los Angeles, CA": {
     "lat": 34.0220775,
     "lng": -118.2803913
@@ -87,6 +108,11 @@
   "24105 Lake Gregory Dr., Crestline, CA": {
     "lat": 34.2420324,
     "lng": -117.2770041
+  },
+  "2411 Glendale Bl, Los Angeles, CA": null,
+  "24500 Main St., Newhall (Santa Clarita), CA": {
+    "lat": 34.3818781,
+    "lng": -118.5295153
   },
   "249 N 9th St, Grover Beach, CA": {
     "lat": 35.1231841,
@@ -112,6 +138,10 @@
     "lat": 34.4819957,
     "lng": -118.1982049
   },
+  "3400 Calle Real, Santa Barbara, CA": {
+    "lat": 34.430073,
+    "lng": -119.736277
+  },
   "350 W Sierra Madre Blvd, Sierra Madre, CA": {
     "lat": 34.1617686,
     "lng": -118.0601957
@@ -129,6 +159,10 @@
     "lng": -117.8497096
   },
   "4193 Park Blvd (at Howard Ave), San Diego, CA": null,
+  "440 W Sierra Madre Blvd, Sierra Madre, CA": {
+    "lat": 34.161758,
+    "lng": -118.0618271
+  },
   "475 North M St, Tulare, CA": {
     "lat": 36.2129525,
     "lng": -119.3454544
@@ -164,6 +198,10 @@
   "585 Franklin St, Mountain View, CA": {
     "lat": 37.3903196,
     "lng": -122.08339
+  },
+  "6040 Telegraph Rd, Ventura, CA": {
+    "lat": 34.2768324,
+    "lng": -119.2125932
   },
   "6121 Melrose Ave, Los Angeles, CA": {
     "lat": 34.0835689,
