@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-14",
+  "scrapedAt": "2026-08-15",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -2611,41 +2611,6 @@
           "2,000 books; 80% donated; 50% hardcover; sorted; .50-$1"
         ]
       }
-    },
-    {
-      "id": "X14009",
-      "city": "Tehachapi",
-      "venue": "Tehachapi Public Library",
-      "address": "212 S. Green St.",
-      "phone": "949-370-6444",
-      "lat": 35.1305065,
-      "lng": -118.447576,
-      "occurrences": [
-        {
-          "start": "2026-08-13",
-          "end": "2026-08-13",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Thu",
-              "open": "04:00",
-              "close": "19:00",
-              "raw": "Thu 4-7"
-            },
-            {
-              "day": "Thu",
-              "open": "03:00",
-              "close": "16:00",
-              "raw": "Preview: Thu 3-4"
-            }
-          ],
-          "notes": [
-            "1,500+ books; 100% donated; 100% hardcover; sorted; $5/bag",
-            "Credit cards accepted."
-          ]
-        }
-      ],
-      "ongoing": null
     },
     {
       "id": "X2268",
