@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-16",
+  "scrapedAt": "2026-08-17",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -138,6 +138,12 @@
           "headline": null,
           "hours": [
             {
+              "day": "Fri",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Fri 10-5"
+            },
+            {
               "day": "Sat",
               "open": "10:00",
               "close": "16:00",
@@ -146,7 +152,7 @@
           ],
           "notes": [
             "Preview: Thu noon-6, Friends; join at door",
-            "100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$2; Sat half-price, Mon, Tue $5/bag, $10/box provided",
+            "100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$2; Sat, Mon half-price, Tue $5/bag, $10/box provided",
             "Credit cards accepted"
           ]
         }
@@ -371,33 +377,6 @@
           }
         ],
         "notes": []
-      }
-    },
-    {
-      "id": "X7366",
-      "city": "Gardena",
-      "venue": "Gardena Mayme Dear Library",
-      "address": "1731 W. Gardena Blvd",
-      "phone": "310-738-8319",
-      "lat": 33.8821904,
-      "lng": -118.3075839,
-      "occurrences": [
-        {
-          "start": "2026-08-15",
-          "end": "2026-08-15",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "500+ books; 100% donated; 85% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $5/bag (bags provided)"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours"
-        ]
       }
     },
     {
@@ -776,16 +755,6 @@
       "lat": 34.0671091,
       "lng": -118.2574018,
       "occurrences": [
-        {
-          "start": "2026-08-15",
-          "end": "2026-08-15",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
-          ]
-        },
         {
           "start": "2026-09-19",
           "end": "2026-09-19",
@@ -2753,36 +2722,6 @@
           "Library hours"
         ]
       }
-    },
-    {
-      "id": "X14336",
-      "city": "Ventura",
-      "venue": "Ventura Friends of the Library \u2014 held at:",
-      "address": "6040 Telegraph Rd",
-      "phone": "805-223-1187",
-      "lat": 34.2768324,
-      "lng": -119.2125932,
-      "occurrences": [
-        {
-          "start": "2026-08-15",
-          "end": "2026-08-15",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "15:00",
-              "raw": "Sat 10-3"
-            }
-          ],
-          "notes": [
-            "1,000 books; 50% donated; sorted; no buyer restrictions ; .50-$5",
-            "Some books sold online",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": null
     }
   ]
 }
