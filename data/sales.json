@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-17",
+  "scrapedAt": "2026-08-18",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -214,15 +214,6 @@
       "lng": -118.4590695,
       "occurrences": [
         {
-          "start": "2026-08-08",
-          "end": "2026-08-16",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "$7/bag in bookstore"
-          ]
-        },
-        {
           "start": "2026-11-14",
           "end": "2026-11-22",
           "headline": null,
@@ -377,6 +368,50 @@
           }
         ],
         "notes": []
+      }
+    },
+    {
+      "id": "X1384",
+      "city": "Fullerton",
+      "venue": "Fullerton Public Library",
+      "address": "353 W. Commonwealth Ave",
+      "phone": "714-738-6326",
+      "lat": 33.8703853,
+      "lng": -117.9299194,
+      "occurrences": [
+        {
+          "start": "2026-10-09",
+          "end": "2026-10-10",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": [
+            "Preview: Fri, 10-11, Friends; join at door",
+            "15,000 books; 100% donated; 50% hardcover; sorted; no buyer restrictions ; .50-$4; Sat 2pm: $3/bag",
+            "Books have been pulled to list online or sell in bookstore",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Sat",
+            "open": "11:00",
+            "close": "15:30",
+            "raw": "Tue-Sat 11-3:30"
+          }
+        ],
+        "notes": [
+          "1,000 books; 70% donated; 60% hardcover; sorted; .50-$5",
+          "\"We sell books online.\" No restrictions"
+        ]
       }
     },
     {
@@ -1158,15 +1193,6 @@
       "lat": 34.3818781,
       "lng": -118.5295153,
       "occurrences": [
-        {
-          "start": "2026-08-08",
-          "end": "2026-08-16",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sale in bookstore $7/bag"
-          ]
-        },
         {
           "start": "2026-11-14",
           "end": "2026-11-22",

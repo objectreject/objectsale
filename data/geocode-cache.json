@@ -118,6 +118,7 @@
     "lat": 35.1231841,
     "lng": -120.6202277
   },
+  "251 South A St, Oxnard, CA": null,
   "2906 S. La Brea Ave, Los Angeles (Baldwin Hills), CA": {
     "lat": 34.0149216,
     "lng": -118.355455
@@ -145,6 +146,10 @@
   "350 W Sierra Madre Blvd, Sierra Madre, CA": {
     "lat": 34.1617686,
     "lng": -118.0601957
+  },
+  "353 W. Commonwealth Ave, Fullerton, CA": {
+    "lat": 33.8703853,
+    "lng": -117.9299194
   },
   "3795 31st St, San Diego, CA": {
     "lat": 32.74727,
