@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-20",
+  "scrapedAt": "2026-08-21",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -937,7 +937,7 @@
       "city": "Los Angeles (Los Feliz)",
       "venue": "Los Feliz Branch Library",
       "address": "1874 N. Hillhurst Ave.",
-      "phone": "213-661-2629",
+      "phone": "323-913-4710",
       "lat": 34.1055614,
       "lng": -118.2874231,
       "occurrences": [
@@ -1305,6 +1305,53 @@
           "notes": [
             "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1",
             "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": null
+    },
+    {
+      "id": "X5361",
+      "city": "Northridge",
+      "venue": "California State University, Oviatt Library",
+      "address": "18111 Nordhoff St.",
+      "phone": "818-677-5573",
+      "lat": 34.2455346,
+      "lng": -118.5263221,
+      "occurrences": [
+        {
+          "start": "2026-11-14",
+          "end": "2026-11-14",
+          "headline": null,
+          "hours": [],
+          "notes": []
+        }
+      ],
+      "ongoing": null
+    },
+    {
+      "id": "X10709",
+      "city": "Northridge",
+      "venue": "Northridge Public Library",
+      "address": "9051 Darby Ave",
+      "phone": "818-886-3640",
+      "lat": 34.2347684,
+      "lng": -118.5339689,
+      "occurrences": [
+        {
+          "start": "2026-11-14",
+          "end": "2026-11-14",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "2,500 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$3"
           ]
         }
       ],
@@ -2748,6 +2795,40 @@
           "Library hours"
         ]
       }
+    },
+    {
+      "id": "X7053",
+      "city": "Woodland Hills",
+      "venue": "Woodland Hills Branch Library",
+      "address": "22200 Ventura Blvd",
+      "phone": "818-226-0017",
+      "lat": 34.1678517,
+      "lng": -118.6107461,
+      "occurrences": [
+        {
+          "start": "2026-08-28",
+          "end": "2026-08-29",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "9:30-4 Sat 9:30-3"
+            },
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Preview: Thu 3-7pm"
+            }
+          ],
+          "notes": [
+            "7,000 books; 100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$2"
+          ]
+        }
+      ],
+      "ongoing": null
     }
   ]
 }

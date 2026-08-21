@@ -72,6 +72,10 @@
     "lat": 33.8821904,
     "lng": -118.3075839
   },
+  "18111 Nordhoff St., Northridge, CA": {
+    "lat": 34.2455346,
+    "lng": -118.5263221
+  },
   "18231 Ventura Blvd, Tarzana, CA": {
     "lat": 34.166392,
     "lng": -118.52986
@@ -99,6 +103,10 @@
   "2211 W Jefferson Blvd, Los Angeles, CA": {
     "lat": 34.0220775,
     "lng": -118.2803913
+  },
+  "22200 Ventura Blvd, Woodland Hills, CA": {
+    "lat": 34.1678517,
+    "lng": -118.6107461
   },
   "23743 W. Valencia Blvd., Valencia, CA": null,
   "2400 Via Campesina, Palos Verdes Estates, CA": {
@@ -235,6 +243,10 @@
   "8437 Sierra Ave, Fontana, CA": {
     "lat": 34.1006519,
     "lng": -117.4350528
+  },
+  "9051 Darby Ave, Northridge, CA": {
+    "lat": 34.2347684,
+    "lng": -118.5339689
   },
   "933 Broadway, Oakland, CA": {
     "lat": 37.8015372,
