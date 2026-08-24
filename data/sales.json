@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-23",
+  "scrapedAt": "2026-08-24",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -1418,23 +1418,6 @@
       "lng": -118.3892081,
       "occurrences": [
         {
-          "start": "2026-08-21",
-          "end": "2026-08-22",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Sat 10-5"
-            }
-          ],
-          "notes": [
-            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
-            "More valuable books removed to sell online"
-          ]
-        },
-        {
           "start": "2026-09-18",
           "end": "2026-09-19",
           "headline": null,
@@ -1504,49 +1487,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X10420",
-      "city": "Pasadena",
-      "venue": "Pasadena Public Library \u2014 Jefferson Campus",
-      "address": "1500 East Villa St.",
-      "phone": "626-744-4680",
-      "lat": 34.154263,
-      "lng": -118.119745,
-      "occurrences": [
-        {
-          "start": "2026-08-22",
-          "end": "2026-08-22",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:00",
-              "close": "14:00",
-              "raw": "Sat 11-2"
-            }
-          ],
-          "notes": [
-            "2,000+ books; 100% donated; 85% hardcover; no buyer restrictions ; Partly sorted; $5/paper grocery bag (specials not included).",
-            "Valuable books sold online and in bookstore",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Thu",
-            "open": "11:00",
-            "close": "16:00",
-            "raw": "Mon-Thu 11-4; Sat 11-4"
-          }
-        ],
-        "notes": [
-          "3,000 books; 100% donated; .50-$2",
-          "Credit cards accepted"
-        ]
-      }
     },
     {
       "id": "X11539",
@@ -2649,35 +2589,6 @@
       "lat": 33.8371247,
       "lng": -118.3429843,
       "occurrences": [
-        {
-          "start": "2026-08-22",
-          "end": "2026-08-23",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "16:00",
-              "raw": "Sat 9-4"
-            },
-            {
-              "day": "Sun",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Sun 1-4"
-            },
-            {
-              "day": "Fri",
-              "open": "02:00",
-              "close": "17:30",
-              "raw": "Preview: Fri 2-5:30"
-            }
-          ],
-          "notes": [
-            "5,000 books; 90% donated; 60% hardcover; sorted; no buyer restrictions ; plus A/V; .50-$1.50; Sun: $5/bag (free to teachers with ID)",
-            "Higher value books sold online"
-          ]
-        },
         {
           "start": "2026-10-17",
           "end": "2026-10-18",
