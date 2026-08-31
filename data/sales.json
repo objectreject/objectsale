@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-30",
+  "scrapedAt": "2026-08-31",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -429,53 +429,6 @@
       "ongoing": null
     },
     {
-      "id": "X7269",
-      "city": "Irvine",
-      "venue": "Heritage Park Library",
-      "address": "14361 Yale Ave",
-      "phone": "949-949-2886",
-      "lat": 33.6996126,
-      "lng": -117.7784034,
-      "occurrences": [
-        {
-          "start": "2026-08-29",
-          "end": "2026-08-29",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "14:00",
-              "raw": "Sat 9-2"
-            }
-          ],
-          "notes": [
-            "6,000 books; 100% donated; 65% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Thu",
-            "open": "11:00",
-            "close": "17:00",
-            "raw": "Mon-Thu 11-5"
-          },
-          {
-            "day": "Sat",
-            "open": "10:00",
-            "close": "16:00",
-            "raw": "Sat 10-4"
-          }
-        ],
-        "notes": [
-          "4,000 books; paperbacks .50; hardcovers $1; newer books $2.50",
-          "Some books removed to sell online"
-        ]
-      }
-    },
-    {
       "id": "X8191",
       "city": "La Jolla",
       "venue": "Athenaeum Music & Arts Library",
@@ -603,22 +556,6 @@
       "lat": 34.050071,
       "lng": -118.2438831,
       "occurrences": [
-        {
-          "start": "2026-08-29",
-          "end": "2026-08-29",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Sat 1-4"
-            }
-          ],
-          "notes": [
-            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
-          ]
-        },
         {
           "start": "2026-09-26",
           "end": "2026-09-26",
@@ -928,16 +865,6 @@
       "lng": -118.2874231,
       "occurrences": [
         {
-          "start": "2026-08-29",
-          "end": "2026-08-29",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "9:30-2:30",
-            "100% donated; 50% hardcover; sorted; .25-$1"
-          ]
-        },
-        {
           "start": "2026-09-26",
           "end": "2026-09-26",
           "headline": null,
@@ -1073,6 +1000,42 @@
         "notes": [
           "Library hours",
           "1,000 books"
+        ]
+      }
+    },
+    {
+      "id": "X16520",
+      "city": "Menifee",
+      "venue": "Menifee Library",
+      "address": "28798 La Piedra Rd",
+      "phone": "951-219-8028",
+      "lat": 33.6759456,
+      "lng": -117.1569501,
+      "occurrences": [
+        {
+          "start": "2026-09-26",
+          "end": "2026-09-26",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "Preview: Fri, 4-5:30, Friends, join at door",
+            "5,000 books; 98% donated; 50% hardcover; sorted; no buyer restrictions ; $2/bag (supplied)"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours",
+          "3,000 books; 100% donated; 75% hardcover; .50-$3",
+          "Cash ($20 bill or less) or ZELLE"
         ]
       }
     },
@@ -2446,29 +2409,6 @@
       "lng": -118.4055941,
       "occurrences": [
         {
-          "start": "2026-08-29",
-          "end": "2026-08-29",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "12:30",
-              "raw": "Sat 9:30-12:30"
-            },
-            {
-              "day": "Sat",
-              "open": "08:30",
-              "close": "21:30",
-              "raw": "Preview: Sat 8:30-9:30"
-            }
-          ],
-          "notes": [
-            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
-            "Please bring your own boxes and bags"
-          ]
-        },
-        {
           "start": "2026-09-26",
           "end": "2026-09-26",
           "headline": null,
@@ -2692,40 +2632,6 @@
           "Library hours"
         ]
       }
-    },
-    {
-      "id": "X7053",
-      "city": "Woodland Hills",
-      "venue": "Woodland Hills Branch Library",
-      "address": "22200 Ventura Blvd",
-      "phone": "818-226-0017",
-      "lat": 34.1678517,
-      "lng": -118.6107461,
-      "occurrences": [
-        {
-          "start": "2026-08-28",
-          "end": "2026-08-29",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "15:00",
-              "raw": "9:30-4 Sat 9:30-3"
-            },
-            {
-              "day": "Thu",
-              "open": "03:00",
-              "close": "19:00",
-              "raw": "Preview: Thu 3-7pm"
-            }
-          ],
-          "notes": [
-            "7,000 books; 100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$2"
-          ]
-        }
-      ],
-      "ongoing": null
     }
   ]
 }

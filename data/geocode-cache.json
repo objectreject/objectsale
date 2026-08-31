@@ -128,6 +128,10 @@
     "lng": -120.6202277
   },
   "251 South A St, Oxnard, CA": null,
+  "28798 La Piedra Rd, Menifee, CA": {
+    "lat": 33.6759456,
+    "lng": -117.1569501
+  },
   "2906 S. La Brea Ave, Los Angeles (Baldwin Hills), CA": {
     "lat": 34.0149216,
     "lng": -118.355455
@@ -216,6 +220,10 @@
   "6040 Telegraph Rd, Ventura, CA": {
     "lat": 34.2768324,
     "lng": -119.2125932
+  },
+  "609 W Center Ave, Visalia, CA": {
+    "lat": 36.3309507,
+    "lng": -119.2979146
   },
   "6121 Melrose Ave, Los Angeles, CA": {
     "lat": 34.0835689,
