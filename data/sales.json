@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-31",
+  "scrapedAt": "2026-09-01",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -2106,23 +2106,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X1864",
-      "city": "Santa Barbara",
-      "venue": "Eastside Library",
-      "address": "1102 E. Montecito St.",
-      "phone": "805-963-3727",
-      "lat": 34.4265758,
-      "lng": -119.6800041,
-      "occurrences": [],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours",
-          "350 nearly new books, software, books for collectors - Permanent $1 Sale"
-        ]
-      }
     },
     {
       "id": "X7742",
