@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-06",
+  "scrapedAt": "2026-09-07",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -633,16 +633,6 @@
       "lng": -118.3334162,
       "occurrences": [
         {
-          "start": "2026-09-04",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Fri, Sat noon-4",
-            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
-          ]
-        },
-        {
           "start": "2026-10-02",
           "end": "2026-10-03",
           "headline": null,
@@ -765,22 +755,6 @@
       "lat": 34.0149216,
       "lng": -118.355455,
       "occurrences": [
-        {
-          "start": "2026-09-05",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "13:00",
-              "raw": "Sat 10-1"
-            }
-          ],
-          "notes": [
-            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
-          ]
-        },
         {
           "start": "2026-10-03",
           "end": "2026-10-03",
@@ -1526,28 +1500,6 @@
       "lng": -117.1835214,
       "occurrences": [
         {
-          "start": "2026-09-05",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:30",
-              "close": "16:30",
-              "raw": "Sat 11:30-4:30"
-            },
-            {
-              "day": "Sat",
-              "open": "10:30",
-              "close": "23:30",
-              "raw": "Preview: Sat 10:30-11:30 Friends only"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
-          ]
-        },
-        {
           "start": "2026-10-03",
           "end": "2026-10-03",
           "headline": null,
@@ -1708,29 +1660,6 @@
       "lng": -117.0405989,
       "occurrences": [
         {
-          "start": "2026-09-05",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "15:00",
-              "raw": "Sat 9:30-3"
-            },
-            {
-              "day": "Fri",
-              "open": "01:00",
-              "close": "15:00",
-              "raw": "Preview: Fri 1-3pm"
-            }
-          ],
-          "notes": [
-            "10,000+ books; $1",
-            "Books scanned to sell online"
-          ]
-        },
-        {
           "start": "2026-10-03",
           "end": "2026-10-03",
           "headline": null,
@@ -1812,16 +1741,6 @@
       "lng": -117.0980871,
       "occurrences": [
         {
-          "start": "2026-09-04",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Fri, Sa5 10-5",
-            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
-          ]
-        },
-        {
           "start": "2026-10-02",
           "end": "2026-10-03",
           "headline": null,
@@ -1863,16 +1782,6 @@
       "lat": 32.74727,
       "lng": -117.126847,
       "occurrences": [
-        {
-          "start": "2026-09-05",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
-          ]
-        },
         {
           "start": "2026-10-03",
           "end": "2026-10-03",
@@ -2176,22 +2085,6 @@
       "lat": 34.3541659,
       "lng": -119.0592705,
       "occurrences": [
-        {
-          "start": "2026-09-05",
-          "end": "2026-09-05",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
-          ]
-        },
         {
           "start": "2026-10-03",
           "end": "2026-10-03",
