@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-07",
+  "scrapedAt": "2026-09-08",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -1956,20 +1956,6 @@
       "lat": 32.8208823,
       "lng": -117.0980871,
       "occurrences": [
-        {
-          "start": "2026-09-04",
-          "end": "2026-09-07",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Sat 10-5"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-10-02",
           "end": "2026-10-05",
