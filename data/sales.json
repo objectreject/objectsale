@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-10",
+  "scrapedAt": "2026-09-11",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -436,7 +436,26 @@
       "phone": "858-454-5872",
       "lat": 32.8469917,
       "lng": -117.274204,
-      "occurrences": [],
+      "occurrences": [
+        {
+          "start": "2026-09-12",
+          "end": "2026-09-12",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": [
+            "3,000 books; 99% donated; 50% hardcover; sorted; no buyer restrictions ; $1-$5",
+            "Some books kept for library collection",
+            "Credit cards accepted"
+          ]
+        }
+      ],
       "ongoing": {
         "hours": [
           {
