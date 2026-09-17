@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-16",
+  "scrapedAt": "2026-09-17",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -69,47 +69,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X17",
-      "city": "Bakersfield",
-      "venue": "Southwest Branch Library",
-      "address": "8301 Ming Ave",
-      "phone": "661-664-7716",
-      "lat": 35.33966,
-      "lng": -119.09424,
-      "occurrences": [
-        {
-          "start": "2026-09-11",
-          "end": "2026-09-15",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Fri 10-5"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "16:00",
-              "raw": "Sat 10-4"
-            }
-          ],
-          "notes": [
-            "Preview: Thu noon-6, Friends; join at door",
-            "100% donated; 80% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$2; Sat, Mon half-price, Tue $5/bag, $10/box provided",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours"
-        ]
-      }
     },
     {
       "id": "X9036",
