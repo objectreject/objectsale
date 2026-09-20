@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-19",
+  "scrapedAt": "2026-09-20",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -11,20 +11,6 @@
       "lat": 33.831904,
       "lng": -117.918771,
       "occurrences": [
-        {
-          "start": "2026-09-18",
-          "end": "2026-09-18",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "11:00",
-              "close": "16:00",
-              "raw": "Friday 11-4"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-10-16",
           "end": "2026-10-16",
@@ -653,16 +639,6 @@
       "lng": -118.2574018,
       "occurrences": [
         {
-          "start": "2026-09-19",
-          "end": "2026-09-19",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
-          ]
-        },
-        {
           "start": "2026-10-17",
           "end": "2026-10-17",
           "headline": null,
@@ -840,22 +816,6 @@
       "lng": -118.4289671,
       "occurrences": [
         {
-          "start": "2026-09-19",
-          "end": "2026-09-19",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "13:30",
-              "raw": "Sat 9:30-1:30"
-            }
-          ],
-          "notes": [
-            "2,500 books; 90% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25 - $1"
-          ]
-        },
-        {
           "start": "2026-12-05",
           "end": "2026-12-05",
           "headline": null,
@@ -883,23 +843,6 @@
       "lat": 33.886883,
       "lng": -118.4103642,
       "occurrences": [
-        {
-          "start": "2026-09-19",
-          "end": "2026-09-19",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "2,000 books; 100% donated; 75% hardcover; sorted; no buyer restrictions ; .50-$1",
-            "Some books removed to sell online"
-          ]
-        },
         {
           "start": "2026-12-05",
           "end": "2026-12-05",
@@ -1304,23 +1247,6 @@
       "lat": 33.7988309,
       "lng": -118.3892081,
       "occurrences": [
-        {
-          "start": "2026-09-18",
-          "end": "2026-09-19",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Sat 10-5"
-            }
-          ],
-          "notes": [
-            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
-            "More valuable books removed to sell online"
-          ]
-        },
         {
           "start": "2026-10-16",
           "end": "2026-10-17",
