@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-09-30",
+  "scrapedAt": "2026-10-01",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -1091,58 +1091,34 @@
       "lng": -117.8497096,
       "occurrences": [
         {
-          "start": "2026-09-12",
-          "end": "2026-09-30",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:00",
-              "close": "13:00",
-              "raw": "Sat 11-1"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "23:00",
-              "raw": "Preview: Sat 10-11"
-            }
-          ],
-          "notes": [
-            "2,000 books; 69% donated; sorted; no buyer restrictions ; $5/bag (provided)",
-            "Some books removed to sell online"
-          ]
-        },
-        {
           "start": "2026-12-05",
           "end": "2026-12-05",
           "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:00",
-              "close": "13:00",
-              "raw": "Sat 11-1"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "23:00",
-              "raw": "Preview: Sat 10-11"
-            }
-          ],
+          "hours": [],
           "notes": [
-            "2,000 books; 69% donated; sorted; no buyer restrictions ; $5/bag (provided)",
-            "Some books removed to sell online"
+            "10-2",
+            "no buyer restrictions",
+            "Holiday Books"
           ]
         }
       ],
       "ongoing": {
-        "hours": [],
+        "hours": [
+          {
+            "day": "Fri",
+            "open": "10:00",
+            "close": "18:00",
+            "raw": "Mon-Fri 10-6"
+          },
+          {
+            "day": "Sat",
+            "open": "10:00",
+            "close": "15:00",
+            "raw": "Sat 10-3 (closed Sun)"
+          }
+        ],
         "notes": [
-          "10-2",
-          "no buyer restrictions",
-          "Holiday Books"
+          "6,000 books; 50% donated; 75% hardcover; sorted; .25-$5"
         ]
       }
     },
@@ -2077,23 +2053,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X9746",
-      "city": "Tarzana",
-      "venue": "Encino-Tarzana Branch Library",
-      "address": "18231 Ventura Blvd",
-      "phone": "818-343-1983",
-      "lat": 34.166392,
-      "lng": -118.52986,
-      "occurrences": [],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours",
-          "2,000 books; 80% donated; 50% hardcover; sorted; .50-$1"
-        ]
-      }
     },
     {
       "id": "X2268",
