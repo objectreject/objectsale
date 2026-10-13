@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-12",
+  "scrapedAt": "2026-10-13",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -251,78 +251,6 @@
         ],
         "notes": []
       }
-    },
-    {
-      "id": "X1384",
-      "city": "Fullerton",
-      "venue": "Fullerton Public Library",
-      "address": "353 W. Commonwealth Ave",
-      "phone": "714-738-6326",
-      "lat": 33.8703853,
-      "lng": -117.9299194,
-      "occurrences": [
-        {
-          "start": "2026-10-09",
-          "end": "2026-10-10",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "16:00",
-              "raw": "Sat 10-4"
-            }
-          ],
-          "notes": [
-            "Preview: Fri, 10-11, Friends; join at door",
-            "15,000 books; 100% donated; 50% hardcover; sorted; no buyer restrictions ; .50-$4; Sat 2pm: $3/bag",
-            "Books have been pulled to list online or sell in bookstore",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Sat",
-            "open": "11:00",
-            "close": "15:30",
-            "raw": "Tue-Sat 11-3:30"
-          }
-        ],
-        "notes": [
-          "1,000 books; 70% donated; 60% hardcover; sorted; .50-$5",
-          "\"We sell books online.\" No restrictions"
-        ]
-      }
-    },
-    {
-      "id": "X10101",
-      "city": "Grover Beach",
-      "venue": "Grover Beach Community Library",
-      "address": "249 N 9th St",
-      "phone": "805-481-4131",
-      "lat": 35.1231841,
-      "lng": -120.6202277,
-      "occurrences": [
-        {
-          "start": "2026-10-10",
-          "end": "2026-10-10",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "15:00",
-              "raw": "Sat 9-3"
-            }
-          ],
-          "notes": [
-            "2,000 books; 80% donated; 30% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1/inch"
-          ]
-        }
-      ],
-      "ongoing": null
     },
     {
       "id": "X8191",
@@ -889,52 +817,6 @@
       }
     },
     {
-      "id": "X1524",
-      "city": "Newport Beach",
-      "venue": "Newport Beach Public Library",
-      "address": "1000 Avocado Ave",
-      "phone": "949-759-9667",
-      "lat": 33.6077736,
-      "lng": -117.873029,
-      "occurrences": [
-        {
-          "start": "2026-10-10",
-          "end": "2026-10-10",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "14:00",
-              "raw": "Sat 9-2"
-            },
-            {
-              "day": "Fri",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Preview: Fri 1-4"
-            }
-          ],
-          "notes": [
-            "15,000 books; 95% donated; 30% hardcover; sorted; no buyer restrictions ; $3/bag (bags provided)",
-            "Valuable books removed to sell in the bookstore or online",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Sat",
-            "open": "10:30",
-            "close": "15:00",
-            "raw": "Mon-Sat 10:30-3"
-          }
-        ],
-        "notes": []
-      }
-    },
-    {
       "id": "X6828",
       "city": "North Hollywood",
       "venue": "North Hollywood Amelia Earhart Library \u2014 (at Magnolia Bl, NW corner, in park)",
@@ -1268,17 +1150,6 @@
       "lng": -117.4123324,
       "occurrences": [
         {
-          "start": "2026-10-10",
-          "end": "2026-10-10",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
-            "Cash only; please bring small bills/change, please bring your own bags"
-          ]
-        },
-        {
           "start": "2026-11-14",
           "end": "2026-11-14",
           "headline": null,
@@ -1442,20 +1313,6 @@
       "lat": 32.7089055,
       "lng": -117.1541411,
       "occurrences": [
-        {
-          "start": "2026-10-10",
-          "end": "2026-10-10",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "16:00",
-              "raw": "Sat 10-4"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-11-14",
           "end": "2026-11-14",
@@ -1667,28 +1524,6 @@
       "lat": 34.1512227,
       "lng": -118.4436874,
       "occurrences": [
-        {
-          "start": "2026-10-10",
-          "end": "2026-10-10",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "13:30",
-              "raw": "Sat 9:30-1:30"
-            },
-            {
-              "day": "Fri",
-              "open": "03:30",
-              "close": "17:00",
-              "raw": "Preview: Fri 3:30-5; Friends only"
-            }
-          ],
-          "notes": [
-            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
-          ]
-        },
         {
           "start": "2026-11-14",
           "end": "2026-11-14",
