@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-13",
+  "scrapedAt": "2026-10-14",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -55,6 +55,40 @@
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X17",
+      "city": "Bakersfield",
+      "venue": "Southwest Branch Library",
+      "address": "8301 Ming Ave",
+      "phone": "661-664-7716",
+      "lat": 35.33966,
+      "lng": -119.09424,
+      "occurrences": [
+        {
+          "start": "2026-10-09",
+          "end": "2026-10-15",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Tue",
+              "open": "10:00",
+              "close": "18:00",
+              "raw": "Tue 10-6"
+            }
+          ],
+          "notes": [
+            "2,000 books; 85% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$10",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
+        ]
+      }
     },
     {
       "id": "X9036",
@@ -215,6 +249,35 @@
       "ongoing": null
     },
     {
+      "id": "X2372",
+      "city": "Escondido",
+      "venue": "Escondido Public Library",
+      "address": "239 S. Kalmia St",
+      "phone": "760-839-4832",
+      "lat": 33.1208887,
+      "lng": -117.0797645,
+      "occurrences": [
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions",
+            "Half price in store"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Mon-Sat 10:-4",
+          "1,000+ books; 100% donated; sorted; .50 and up",
+          "Credit cards accepted"
+        ]
+      }
+    },
+    {
       "id": "X10380",
       "city": "Fontana",
       "venue": "Lewis Library and Technology Center",
@@ -251,6 +314,40 @@
         ],
         "notes": []
       }
+    },
+    {
+      "id": "X1526",
+      "city": "Granada Hills",
+      "venue": "Granada Hills Library",
+      "address": "10640 Petit Ave.",
+      "phone": "818-368-5687",
+      "lat": 34.2643578,
+      "lng": -118.497644,
+      "occurrences": [
+        {
+          "start": "2026-10-24",
+          "end": "2026-10-24",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:30",
+              "raw": "Sat 9:30-3:30"
+            },
+            {
+              "day": "Fri",
+              "open": "02:00",
+              "close": "17:00",
+              "raw": "Preview: Fri 2-5"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        }
+      ],
+      "ongoing": null
     },
     {
       "id": "X8191",
