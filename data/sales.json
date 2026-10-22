@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-21",
+  "scrapedAt": "2026-10-22",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -849,6 +849,76 @@
         "notes": [
           "Thousands of books; 100% donated; 80% hardcover; sorted; .25-$2"
         ]
+      }
+    },
+    {
+      "id": "X1524",
+      "city": "Newport Beach",
+      "venue": "Newport Beach Public Library",
+      "address": "1000 Avocado Ave",
+      "phone": "949-759-9667",
+      "lat": 33.6077736,
+      "lng": -117.873029,
+      "occurrences": [
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:00",
+              "close": "14:00",
+              "raw": "Sat 9-2"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Preview: Fri 1-4"
+            }
+          ],
+          "notes": [
+            "10,000 books; 100% donated; 50% hardcover; sorted; no buyer restrictions ; $3/bag (bags provided)",
+            "Valuable books removed to sell in the bookstore or online",
+            "Credit cards accepted"
+          ]
+        },
+        {
+          "start": "2027-06-04",
+          "end": "2027-06-04",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:00",
+              "close": "14:00",
+              "raw": "Sat 9-2"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Preview: Fri 1-4"
+            }
+          ],
+          "notes": [
+            "10,000 books; 100% donated; 50% hardcover; sorted; no buyer restrictions ; $3/bag (bags provided)",
+            "Valuable books removed to sell in the bookstore or online",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Sat",
+            "open": "10:30",
+            "close": "15:00",
+            "raw": "Mon-Sat 10:30-3"
+          }
+        ],
+        "notes": []
       }
     },
     {
