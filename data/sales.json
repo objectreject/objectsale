@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-24",
+  "scrapedAt": "2026-10-25",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -77,7 +77,25 @@
       "phone": "619-435-1516",
       "lat": 32.6911545,
       "lng": -117.1776568,
-      "occurrences": [],
+      "occurrences": [
+        {
+          "start": "2026-11-21",
+          "end": "2026-11-21",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "15:00",
+              "raw": "Sat 10-3"
+            }
+          ],
+          "notes": [
+            "5,000+ books; 100% donated; no buyer restrictions",
+            "Credit cards accepted"
+          ]
+        }
+      ],
       "ongoing": {
         "hours": [
           {
@@ -232,6 +250,33 @@
           }
         ],
         "notes": []
+      }
+    },
+    {
+      "id": "X7366",
+      "city": "Gardena",
+      "venue": "Gardena Mayme Dear Library",
+      "address": "1731 W. Gardena Blvd",
+      "phone": "310-738-8319",
+      "lat": 33.8821904,
+      "lng": -118.3075839,
+      "occurrences": [
+        {
+          "start": "2026-12-06",
+          "end": "2026-12-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "500+ books; 100% donated; 85% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $5/bag (bags provided)"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
+        ]
       }
     },
     {
@@ -1771,7 +1816,7 @@
             }
           ],
           "notes": [
-            "2,500 books; 90% donated; 60% hardcover; sorted; no buyer restrictions ; .50-$1.50",
+            "2,000 books; 90% donated; 60% hardcover; sorted; no buyer restrictions ; .50-$1.50",
             "Higher value books sold online"
           ]
         }
