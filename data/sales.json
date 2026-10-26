@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-25",
+  "scrapedAt": "2026-10-26",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -280,40 +280,6 @@
       }
     },
     {
-      "id": "X1526",
-      "city": "Granada Hills",
-      "venue": "Granada Hills Library",
-      "address": "10640 Petit Ave.",
-      "phone": "818-368-5687",
-      "lat": 34.2643578,
-      "lng": -118.497644,
-      "occurrences": [
-        {
-          "start": "2026-10-24",
-          "end": "2026-10-24",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "15:30",
-              "raw": "Sat 9:30-3:30"
-            },
-            {
-              "day": "Fri",
-              "open": "02:00",
-              "close": "17:00",
-              "raw": "Preview: Fri 2-5"
-            }
-          ],
-          "notes": [
-            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
-          ]
-        }
-      ],
-      "ongoing": null
-    },
-    {
       "id": "X8191",
       "city": "La Jolla",
       "venue": "Athenaeum Music & Arts Library",
@@ -383,52 +349,6 @@
         ],
         "notes": [
           "Bookstore with occasional special Saturday sales"
-        ]
-      }
-    },
-    {
-      "id": "X1391",
-      "city": "Lompoc",
-      "venue": "Lompoc Public Library",
-      "address": "501 East North Ave.",
-      "phone": "805-875-8784",
-      "lat": 34.6537582,
-      "lng": -120.4520495,
-      "occurrences": [
-        {
-          "start": "2026-10-23",
-          "end": "2026-10-24",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Fri",
-              "open": "10:00",
-              "close": "18:00",
-              "raw": "Fri 10-6"
-            },
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "15:00",
-              "raw": "Sat 10-3"
-            },
-            {
-              "day": "Thu",
-              "open": "05:00",
-              "close": "19:00",
-              "raw": "Preview: Thu 5-7"
-            }
-          ],
-          "notes": [
-            "6,000 books; 100% donated; 20% hardcover; sorted; Preview and Friday: $1 per inch; Sat $5/plastic grocery bag (provided)",
-            "Some books removed"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours"
         ]
       }
     },
@@ -624,29 +544,6 @@
           ],
           "notes": [
             "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
-          ]
-        }
-      ],
-      "ongoing": null
-    },
-    {
-      "id": "X1216",
-      "city": "Los Angeles (Eagle Rock)",
-      "venue": "Eagle Rock Branch Library",
-      "address": "5027 Caspar Ave.",
-      "phone": "323-258-5078",
-      "lat": 34.137431,
-      "lng": -118.2133172,
-      "occurrences": [
-        {
-          "start": "2026-10-24",
-          "end": "2026-10-24",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "10-3",
-            "4,000 books; 100% donated; 60% hardcover; .25-$1",
-            "Bake sale 9:30-11:30"
           ]
         }
       ],
@@ -1533,35 +1430,6 @@
       "ongoing": null
     },
     {
-      "id": "X8311",
-      "city": "San Diego (Allied Gardens)",
-      "venue": "Allied Gardens Library",
-      "address": "5188 Zion Ave",
-      "phone": "619-533-3970",
-      "lat": 32.7930662,
-      "lng": -117.0814929,
-      "occurrences": [
-        {
-          "start": "2026-10-24",
-          "end": "2026-10-24",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "13:00",
-              "raw": "Sat 9:30-1"
-            }
-          ],
-          "notes": [
-            "2,200 books; 90% donated; 50% hardcover; sorted; no buyer restrictions ; .10-$1",
-            "We have scanned books for certain buyers"
-          ]
-        }
-      ],
-      "ongoing": null
-    },
-    {
       "id": "X7439",
       "city": "Santa Paula",
       "venue": "Blanchard Community Library",
@@ -1807,12 +1675,6 @@
               "open": "10:00",
               "close": "16:00",
               "raw": "Sat 10-4"
-            },
-            {
-              "day": "Fri",
-              "open": "02:00",
-              "close": "17:30",
-              "raw": "Preview: Fri 2-5:30"
             }
           ],
           "notes": [
