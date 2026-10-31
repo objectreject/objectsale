@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-30",
+  "scrapedAt": "2026-10-31",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -113,47 +113,6 @@
         ],
         "notes": [
           "Second Hand Prose Book Store Behind Library on \"D\" Avenue"
-        ]
-      }
-    },
-    {
-      "id": "X9703",
-      "city": "Costa Mesa",
-      "venue": "Orange Coast College \u2014 (Parking $5 through college parking app)",
-      "address": "2701 Fairview Rd",
-      "phone": "714-432-0202 x 21058",
-      "lat": 33.6707117,
-      "lng": -117.9092951,
-      "occurrences": [
-        {
-          "start": "2026-10-27",
-          "end": "2026-10-28",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Wed",
-              "open": "10:00",
-              "close": "15:00",
-              "raw": "Wed 10-3"
-            },
-            {
-              "day": "Tue",
-              "open": "09:00",
-              "close": "22:00",
-              "raw": "Preview: Tue 9-10"
-            }
-          ],
-          "notes": [
-            "4,000 books; 100% donated; 50% hardcover; .50-$2",
-            "Some books removed for library",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Friends of Library store & gallery"
         ]
       }
     },
