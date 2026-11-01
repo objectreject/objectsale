@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-31",
+  "scrapedAt": "2026-11-01",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -143,35 +143,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X2372",
-      "city": "Escondido",
-      "venue": "Escondido Public Library",
-      "address": "239 S. Kalmia St",
-      "phone": "760-839-4832",
-      "lat": 33.1208887,
-      "lng": -117.0797645,
-      "occurrences": [
-        {
-          "start": "2026-10-31",
-          "end": "2026-10-31",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions",
-            "Half price in store"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Mon-Sat 10:-4",
-          "1,000+ books; 100% donated; sorted; .50 and up",
-          "Credit cards accepted"
-        ]
-      }
     },
     {
       "id": "X10380",
@@ -320,22 +291,6 @@
       "lat": 34.050071,
       "lng": -118.2438831,
       "occurrences": [
-        {
-          "start": "2026-10-31",
-          "end": "2026-10-31",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Sat 1-4"
-            }
-          ],
-          "notes": [
-            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
-          ]
-        },
         {
           "start": "2026-11-28",
           "end": "2026-11-28",
@@ -518,16 +473,6 @@
       "lng": -118.2874231,
       "occurrences": [
         {
-          "start": "2026-10-31",
-          "end": "2026-10-31",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "9:30-2:30",
-            "100% donated; 50% hardcover; sorted; .25-$1"
-          ]
-        },
-        {
           "start": "2026-11-28",
           "end": "2026-11-28",
           "headline": null,
@@ -644,6 +589,29 @@
             "7,500 books; 100% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$2",
             "Credit cards accepted"
           ]
+        },
+        {
+          "start": "2026-12-04",
+          "end": "2026-12-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "16:30",
+              "raw": "Fri 1-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": [
+            "7,500 books; 100% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$2",
+            "Credit cards accepted"
+          ]
         }
       ],
       "ongoing": {
@@ -669,41 +637,6 @@
         ],
         "notes": [
           ".50 & up"
-        ]
-      }
-    },
-    {
-      "id": "X11319",
-      "city": "Moorpark",
-      "venue": "Moorpark City Library",
-      "address": "699 Moorpark Ave",
-      "phone": null,
-      "lat": 34.286322,
-      "lng": -118.882246,
-      "occurrences": [],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Thu",
-            "open": "10:00",
-            "close": "20:00",
-            "raw": "Mon-Thu 10-8"
-          },
-          {
-            "day": "Sat",
-            "open": "10:00",
-            "close": "17:00",
-            "raw": "Sat 10-5"
-          },
-          {
-            "day": "Sun",
-            "open": "01:00",
-            "close": "17:00",
-            "raw": "Sun 1-5"
-          }
-        ],
-        "notes": [
-          ".25-$1; Some items sold online"
         ]
       }
     },
@@ -997,27 +930,6 @@
           "3,000 books; 100% donated; .50-$2",
           "Credit cards accepted"
         ]
-      }
-    },
-    {
-      "id": "X11539",
-      "city": "Paso Robles",
-      "venue": "Paso Robles Library",
-      "address": "1000 Spring St",
-      "phone": "805-237-3870",
-      "lat": 35.6253834,
-      "lng": -120.6906835,
-      "occurrences": [],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Sat",
-            "open": "10:00",
-            "close": "17:00",
-            "raw": "Mon-Sat 10-5"
-          }
-        ],
-        "notes": []
       }
     },
     {
@@ -1544,29 +1456,6 @@
       "lng": -118.4055941,
       "occurrences": [
         {
-          "start": "2026-10-31",
-          "end": "2026-10-31",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "12:30",
-              "raw": "Sat 9:30-12:30"
-            },
-            {
-              "day": "Sat",
-              "open": "08:30",
-              "close": "21:30",
-              "raw": "Preview: Sat 8:30-9:30"
-            }
-          ],
-          "notes": [
-            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
-            "Please bring your own boxes and bags"
-          ]
-        },
-        {
           "start": "2026-11-28",
           "end": "2026-11-28",
           "headline": null,
@@ -1691,6 +1580,36 @@
           "Library hours"
         ]
       }
+    },
+    {
+      "id": "X14336",
+      "city": "Ventura",
+      "venue": "Ventura Friends of the Library \u2014 held at:",
+      "address": "6040 Telegraph Rd",
+      "phone": "805-223-1187",
+      "lat": 34.2768324,
+      "lng": -119.2125932,
+      "occurrences": [
+        {
+          "start": "2026-11-07",
+          "end": "2026-11-07",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:00",
+              "close": "15:00",
+              "raw": "Sat 9-3"
+            }
+          ],
+          "notes": [
+            "1,000 books; 100% donated; 80% hardcover; sorted; no buyer restrictions ; .50-$5",
+            "Some books sold online",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": null
     }
   ]
 }
