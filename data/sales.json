@@ -1,7 +1,23 @@
 {
-  "scrapedAt": "2026-11-03",
+  "scrapedAt": "2026-11-04",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
+    {
+      "id": "X11843",
+      "city": "Acton",
+      "venue": "Acton-Agua Dulce Library",
+      "address": "33792 Crown Valley Rd",
+      "phone": "661-209-2014",
+      "lat": 34.4819957,
+      "lng": -118.1982049,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
+        ]
+      }
+    },
     {
       "id": "X7196",
       "city": "Anaheim",
@@ -38,9 +54,170 @@
             }
           ],
           "notes": []
+        },
+        {
+          "start": "2027-01-15",
+          "end": "2027-01-15",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-02-19",
+          "end": "2027-02-19",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-03-19",
+          "end": "2027-03-19",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-04-16",
+          "end": "2027-04-16",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-05-21",
+          "end": "2027-05-21",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-06-18",
+          "end": "2027-06-18",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-07-16",
+          "end": "2027-07-16",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-08-20",
+          "end": "2027-08-20",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "11:00",
+              "close": "16:00",
+              "raw": "Friday 11-4"
+            }
+          ],
+          "notes": []
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X17",
+      "city": "Bakersfield",
+      "venue": "Southwest Branch Library",
+      "address": "8301 Ming Ave",
+      "phone": "661-664-7716",
+      "lat": 35.33966,
+      "lng": -119.09424,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
+        ]
+      }
+    },
+    {
+      "id": "X2306",
+      "city": "Blue Jay",
+      "venue": "Lake Arrowhead Library",
+      "address": "27235 Highway 189",
+      "phone": "909-337-3118",
+      "lat": 34.2466844,
+      "lng": -117.2092094,
+      "occurrences": [
+        {
+          "start": "2027-05-29",
+          "end": "2027-05-29",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "07:00",
+              "close": "17:00",
+              "raw": "Sat 7-5"
+            }
+          ],
+          "notes": [
+            "2,500 books; 100% donated; 80% hardcover; sorted; .25-$2"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
+        ]
+      }
     },
     {
       "id": "X11344",
@@ -66,6 +243,100 @@
         "notes": [
           "Library hours",
           "Thousands of books"
+        ]
+      }
+    },
+    {
+      "id": "X11973",
+      "city": "Chatsworth",
+      "venue": "Chatsworth Branch Library",
+      "address": "21052 Devonshire St",
+      "phone": "818-341-4276",
+      "lat": 34.2569724,
+      "lng": -118.592637,
+      "occurrences": [
+        {
+          "start": "2027-01-16",
+          "end": "2027-01-16",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            },
+            {
+              "day": "Fri",
+              "open": "02:00",
+              "close": "16:00",
+              "raw": "Preview: Fri 2-4pm"
+            }
+          ],
+          "notes": [
+            "5,000 books; 85% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; plus CDs, DVDs, books on CD; paperbacks .50; hardcovers $1; children's .50, 3/$1; music CDs .50, DVDs, books on CD $1"
+          ]
+        },
+        {
+          "start": "2027-04-17",
+          "end": "2027-04-17",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            },
+            {
+              "day": "Fri",
+              "open": "02:00",
+              "close": "16:00",
+              "raw": "Preview: Fri 2-4pm"
+            }
+          ],
+          "notes": [
+            "5,000 books; 85% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; plus CDs, DVDs, books on CD; paperbacks .50; hardcovers $1; children's .50, 3/$1; music CDs .50, DVDs, books on CD $1"
+          ]
+        },
+        {
+          "start": "2027-07-17",
+          "end": "2027-07-17",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            },
+            {
+              "day": "Fri",
+              "open": "02:00",
+              "close": "16:00",
+              "raw": "Preview: Fri 2-4pm"
+            }
+          ],
+          "notes": [
+            "5,000 books; 85% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; plus CDs, DVDs, books on CD; paperbacks .50; hardcovers $1; children's .50, 3/$1; music CDs .50, DVDs, books on CD $1"
+          ]
+        }
+      ],
+      "ongoing": null
+    },
+    {
+      "id": "X6629",
+      "city": "Chino Hills",
+      "venue": "Chino Hills Branch Library",
+      "address": "14020 City Center Dr",
+      "phone": "909-590-5380",
+      "lat": 33.9975827,
+      "lng": -117.7306749,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
         ]
       }
     },
@@ -100,20 +371,12 @@
         "hours": [
           {
             "day": "Sat",
-            "open": "10:00",
+            "open": "09:00",
             "close": "16:00",
-            "raw": "Mon-Sat 10-4"
-          },
-          {
-            "day": "Sun",
-            "open": "01:00",
-            "close": "16:00",
-            "raw": "Sun 1-4"
+            "raw": "Sat 9-4"
           }
         ],
-        "notes": [
-          "Second Hand Prose Book Store Behind Library on \"D\" Avenue"
-        ]
+        "notes": []
       }
     },
     {
@@ -156,6 +419,46 @@
         {
           "start": "2026-12-04",
           "end": "2026-12-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sale in the Bookstore",
+            "1,000 books; 100% donated; sorted; no buyer restrictions"
+          ]
+        },
+        {
+          "start": "2027-02-05",
+          "end": "2027-02-07",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sale in the Bookstore",
+            "1,000 books; 100% donated; sorted; no buyer restrictions"
+          ]
+        },
+        {
+          "start": "2027-04-02",
+          "end": "2027-04-04",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sale in the Bookstore",
+            "1,000 books; 100% donated; sorted; no buyer restrictions"
+          ]
+        },
+        {
+          "start": "2027-06-12",
+          "end": "2027-06-12",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sale in the Bookstore",
+            "1,000 books; 100% donated; sorted; no buyer restrictions"
+          ]
+        },
+        {
+          "start": "2027-08-06",
+          "end": "2027-08-08",
           "headline": null,
           "hours": [],
           "notes": [
@@ -254,31 +557,99 @@
           "notes": [
             ".25-.50 plus holiday books $1-$20"
           ]
+        },
+        {
+          "start": "2027-01-09",
+          "end": "2027-01-09",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            ".25-.50 plus holiday books $1-$20"
+          ]
+        },
+        {
+          "start": "2027-03-13",
+          "end": "2027-03-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            ".25-.50 plus holiday books $1-$20"
+          ]
+        },
+        {
+          "start": "2027-05-08",
+          "end": "2027-05-08",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            ".25-.50 plus holiday books $1-$20"
+          ]
+        },
+        {
+          "start": "2027-07-10",
+          "end": "2027-07-10",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            ".25-.50 plus holiday books $1-$20"
+          ]
         }
       ],
       "ongoing": {
         "hours": [
           {
-            "day": "Thu",
-            "open": "10:15",
-            "close": "18:00",
-            "raw": "Mon-Thu 10:15 - 6; Fri"
-          },
-          {
             "day": "Sat",
-            "open": "10:15",
-            "close": "16:00",
-            "raw": "Sat 10:15-4"
-          },
-          {
-            "day": "Sun",
-            "open": "01:00",
-            "close": "16:00",
-            "raw": "Sun 1-4"
+            "open": "10:00",
+            "close": "14:00",
+            "raw": "Sat 10-2"
           }
         ],
         "notes": [
-          "Bookstore with occasional special Saturday sales"
+          "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
+        ]
+      }
+    },
+    {
+      "id": "X1391",
+      "city": "Lompoc",
+      "venue": "Lompoc Public Library",
+      "address": "501 East North Ave.",
+      "phone": "805-875-8784",
+      "lat": 34.6537582,
+      "lng": -120.4520495,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours"
         ]
       }
     },
@@ -322,6 +693,134 @@
           "notes": [
             "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
           ]
+        },
+        {
+          "start": "2027-01-30",
+          "end": "2027-01-30",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-02-27",
+          "end": "2027-02-27",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-03-27",
+          "end": "2027-03-27",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-04-24",
+          "end": "2027-04-24",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-05-29",
+          "end": "2027-05-29",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-06-26",
+          "end": "2027-06-26",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-07-31",
+          "end": "2027-07-31",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
+        },
+        {
+          "start": "2027-08-28",
+          "end": "2027-08-28",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Sat 1-4"
+            }
+          ],
+          "notes": [
+            "Many Japanese materials available in addition to those in English (If you have donations, please bring them the last week of the month and call first to confirm whether we have room to store them)"
+          ]
         }
       ],
       "ongoing": null
@@ -348,6 +847,86 @@
         {
           "start": "2026-12-04",
           "end": "2026-12-05",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-02-05",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-03-05",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-04-02",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-05-07",
+          "end": "2027-05-08",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-06-04",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-07-02",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sat noon-4",
+            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
+          ]
+        },
+        {
+          "start": "2027-08-06",
+          "end": "2027-08-07",
           "headline": null,
           "hours": [],
           "notes": [
@@ -415,6 +994,86 @@
             "Sat 10-noon",
             "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
           ]
+        },
+        {
+          "start": "2027-01-16",
+          "end": "2027-01-16",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-02-20",
+          "end": "2027-02-20",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-03-20",
+          "end": "2027-03-20",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-04-17",
+          "end": "2027-04-17",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-05-15",
+          "end": "2027-05-15",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-06-19",
+          "end": "2027-06-19",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-07-17",
+          "end": "2027-07-17",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
+        },
+        {
+          "start": "2027-08-21",
+          "end": "2027-08-21",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 50% donated; 30% hardcover; not 'picked over' ; no buyer restrictions ; .75-$1"
+          ]
         }
       ],
       "ongoing": null
@@ -459,6 +1118,157 @@
           "notes": [
             "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
           ]
+        },
+        {
+          "start": "2027-01-02",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-03-06",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-04-03",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-01",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-06-05",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-07-03",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-07",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "13:00",
+              "raw": "Sat 10-1"
+            }
+          ],
+          "notes": [
+            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
+          ]
+        }
+      ],
+      "ongoing": null
+    },
+    {
+      "id": "X1216",
+      "city": "Los Angeles (Eagle Rock)",
+      "venue": "Eagle Rock Branch Library",
+      "address": "5027 Caspar Ave.",
+      "phone": "323-258-5078",
+      "lat": 34.137431,
+      "lng": -118.2133172,
+      "occurrences": [
+        {
+          "start": "2027-04-24",
+          "end": "2027-04-24",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "10-3",
+            "4,000 books; 100% donated; 60% hardcover; .25-$1",
+            "Bake sale 9:30-11:30"
+          ]
         }
       ],
       "ongoing": null
@@ -485,6 +1295,86 @@
         {
           "start": "2026-12-26",
           "end": "2026-12-26",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-01-30",
+          "end": "2027-01-30",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-02-27",
+          "end": "2027-02-27",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-03-27",
+          "end": "2027-03-27",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-04-24",
+          "end": "2027-04-24",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-05-29",
+          "end": "2027-05-29",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-06-26",
+          "end": "2027-06-26",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-07-31",
+          "end": "2027-07-31",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "9:30-2:30",
+            "100% donated; 50% hardcover; sorted; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-08-28",
+          "end": "2027-08-28",
           "headline": null,
           "hours": [],
           "notes": [
@@ -885,6 +1775,142 @@
             "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
             "More valuable books removed to sell online"
           ]
+        },
+        {
+          "start": "2027-01-15",
+          "end": "2027-01-16",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-02-19",
+          "end": "2027-02-20",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-03-19",
+          "end": "2027-03-20",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-04-16",
+          "end": "2027-04-17",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-05-21",
+          "end": "2027-05-22",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-06-18",
+          "end": "2027-06-19",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-07-16",
+          "end": "2027-07-17",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
+        },
+        {
+          "start": "2027-08-20",
+          "end": "2027-08-21",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": [
+            "25,000+ books; 95% donated; 70% hardcover; sorted; no buyer restrictions ; includes records, CDs, DVDs, books on CD; .50-$3",
+            "More valuable books removed to sell online"
+          ]
         }
       ],
       "ongoing": null
@@ -933,6 +1959,27 @@
       }
     },
     {
+      "id": "X11539",
+      "city": "Paso Robles",
+      "venue": "Paso Robles Library",
+      "address": "1000 Spring St",
+      "phone": "805-237-3870",
+      "lat": 35.6253834,
+      "lng": -120.6906835,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Sat",
+            "open": "10:00",
+            "close": "17:00",
+            "raw": "Mon-Sat 10-5"
+          }
+        ],
+        "notes": []
+      }
+    },
+    {
       "id": "X11035",
       "city": "Redlands",
       "venue": "A.K. Smiley Library",
@@ -966,6 +2013,182 @@
         {
           "start": "2026-12-05",
           "end": "2026-12-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-01-02",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-03-06",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-04-03",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-01",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-06-05",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-07-03",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:30",
+              "close": "16:30",
+              "raw": "Sat 11:30-4:30"
+            },
+            {
+              "day": "Sat",
+              "open": "10:30",
+              "close": "23:30",
+              "raw": "Preview: Sat 10:30-11:30 Friends only"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-07",
           "headline": null,
           "hours": [
             {
@@ -1036,6 +2259,94 @@
             "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
             "Cash only; please bring small bills/change, please bring your own bags"
           ]
+        },
+        {
+          "start": "2027-01-09",
+          "end": "2027-01-09",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-02-13",
+          "end": "2027-02-13",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-03-13",
+          "end": "2027-03-13",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-04-10",
+          "end": "2027-04-10",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-05-08",
+          "end": "2027-05-08",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-06-12",
+          "end": "2027-06-12",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-07-10",
+          "end": "2027-07-10",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
+        },
+        {
+          "start": "2027-08-14",
+          "end": "2027-08-14",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
+            "Cash only; please bring small bills/change, please bring your own bags"
+          ]
         }
       ],
       "ongoing": {
@@ -1047,6 +2358,28 @@
           "Cash only; please bring small bills/change"
         ]
       }
+    },
+    {
+      "id": "X1178",
+      "city": "San Diego",
+      "venue": "Kensington-Normal Heights Branch Library",
+      "address": "4121 Adams Ave",
+      "phone": "619-533-3974",
+      "lat": 32.7630265,
+      "lng": -117.1068654,
+      "occurrences": [
+        {
+          "start": "2027-05-31",
+          "end": "2027-05-31",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "400-1,000 books; sorted; paperbacks .25; hardcovers $1",
+            "Memorial Day parade"
+          ]
+        }
+      ],
+      "ongoing": null
     },
     {
       "id": "X1817",
@@ -1102,6 +2435,190 @@
             "10,000+ books; $1",
             "Books scanned to sell online"
           ]
+        },
+        {
+          "start": "2027-01-02",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-03-06",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-04-03",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-01",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-06-05",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-07-03",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-07",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "15:00",
+              "raw": "Sat 9:30-3"
+            },
+            {
+              "day": "Fri",
+              "open": "01:00",
+              "close": "15:00",
+              "raw": "Preview: Fri 1-3pm"
+            }
+          ],
+          "notes": [
+            "10,000+ books; $1",
+            "Books scanned to sell online"
+          ]
         }
       ],
       "ongoing": null
@@ -1128,6 +2645,86 @@
         {
           "start": "2026-12-04",
           "end": "2026-12-05",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-02-05",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-03-05",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-04-02",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-04-30",
+          "end": "2027-05-01",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-06-04",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-07-02",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Fri, Sa5 10-5",
+            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
+          ]
+        },
+        {
+          "start": "2027-08-06",
+          "end": "2027-08-07",
           "headline": null,
           "hours": [],
           "notes": [
@@ -1166,6 +2763,86 @@
             "Sat 10-noon",
             "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
           ]
+        },
+        {
+          "start": "2027-01-02",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-03-06",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-04-03",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-01",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-06-05",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-07-03",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-07",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "Sat 10-noon",
+            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
+          ]
         }
       ],
       "ongoing": null
@@ -1196,6 +2873,118 @@
         {
           "start": "2026-12-12",
           "end": "2026-12-12",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-01-09",
+          "end": "2027-01-09",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-02-13",
+          "end": "2027-02-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-03-13",
+          "end": "2027-03-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-04-10",
+          "end": "2027-04-10",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-05-08",
+          "end": "2027-05-08",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-06-12",
+          "end": "2027-06-12",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-07-10",
+          "end": "2027-07-10",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-08-14",
+          "end": "2027-08-14",
           "headline": null,
           "hours": [
             {
@@ -1256,6 +3045,118 @@
             }
           ],
           "notes": []
+        },
+        {
+          "start": "2027-01-07",
+          "end": "2027-01-07",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-02-04",
+          "end": "2027-02-04",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-03-04",
+          "end": "2027-03-04",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-04-01",
+          "end": "2027-04-01",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-05-06",
+          "end": "2027-05-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-06-03",
+          "end": "2027-06-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-07-01",
+          "end": "2027-07-01",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-08-05",
+          "end": "2027-08-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Thu",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Thu 3-7pm"
+            }
+          ],
+          "notes": []
         }
       ],
       "ongoing": null
@@ -1296,9 +3197,138 @@
             }
           ],
           "notes": []
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-04",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-02-05",
+          "end": "2027-02-08",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-03-05",
+          "end": "2027-03-08",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-04-02",
+          "end": "2027-04-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-04-30",
+          "end": "2027-05-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-06-04",
+          "end": "2027-06-07",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-07-02",
+          "end": "2027-07-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-08-06",
+          "end": "2027-08-09",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X1864",
+      "city": "Santa Barbara",
+      "venue": "Eastside Library",
+      "address": "1102 E. Montecito St.",
+      "phone": "805-963-3727",
+      "lat": 34.4265758,
+      "lng": -119.6800041,
+      "occurrences": [],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours",
+          "350 nearly new books, software, books for collectors - Permanent $1 Sale"
+        ]
+      }
     },
     {
       "id": "X7439",
@@ -1328,6 +3358,134 @@
         {
           "start": "2026-12-05",
           "end": "2026-12-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-01-02",
+          "end": "2027-01-02",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-03-06",
+          "end": "2027-03-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-04-03",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-01",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-06-05",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-07-03",
+          "end": "2027-07-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-07",
           "headline": null,
           "hours": [
             {
@@ -1402,6 +3560,182 @@
           "notes": [
             "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
           ]
+        },
+        {
+          "start": "2027-01-09",
+          "end": "2027-01-09",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-02-13",
+          "end": "2027-02-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-03-13",
+          "end": "2027-03-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-04-10",
+          "end": "2027-04-10",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-05-08",
+          "end": "2027-05-08",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-06-12",
+          "end": "2027-06-12",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-07-10",
+          "end": "2027-07-10",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
+        },
+        {
+          "start": "2027-08-14",
+          "end": "2027-08-14",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "13:30",
+              "raw": "Sat 9:30-1:30"
+            },
+            {
+              "day": "Fri",
+              "open": "03:30",
+              "close": "17:00",
+              "raw": "Preview: Fri 3:30-5; Friends only"
+            }
+          ],
+          "notes": [
+            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
+          ]
         }
       ],
       "ongoing": null
@@ -1418,6 +3752,98 @@
         {
           "start": "2026-12-04",
           "end": "2026-12-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Fri 3-7pm"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "2,000+ books; 80% donated; 50% hardcover; sorted; no buyer restrictions ; $1-$15; Sat $5/bag",
+            "A few vintage books are listed online"
+          ]
+        },
+        {
+          "start": "2027-02-05",
+          "end": "2027-02-06",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Fri 3-7pm"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "2,000+ books; 80% donated; 50% hardcover; sorted; no buyer restrictions ; $1-$15; Sat $5/bag",
+            "A few vintage books are listed online"
+          ]
+        },
+        {
+          "start": "2027-04-02",
+          "end": "2027-04-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Fri 3-7pm"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "2,000+ books; 80% donated; 50% hardcover; sorted; no buyer restrictions ; $1-$15; Sat $5/bag",
+            "A few vintage books are listed online"
+          ]
+        },
+        {
+          "start": "2027-06-04",
+          "end": "2027-06-05",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Fri",
+              "open": "03:00",
+              "close": "19:00",
+              "raw": "Fri 3-7pm"
+            },
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "2,000+ books; 80% donated; 50% hardcover; sorted; no buyer restrictions ; $1-$15; Sat $5/bag",
+            "A few vintage books are listed online"
+          ]
+        },
+        {
+          "start": "2027-08-06",
+          "end": "2027-08-07",
           "headline": null,
           "hours": [
             {
@@ -1500,6 +3926,190 @@
             "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
             "Please bring your own boxes and bags"
           ]
+        },
+        {
+          "start": "2027-01-30",
+          "end": "2027-01-30",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-02-27",
+          "end": "2027-02-27",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-03-27",
+          "end": "2027-03-27",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-04-24",
+          "end": "2027-04-24",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-05-29",
+          "end": "2027-05-29",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-06-26",
+          "end": "2027-06-26",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-07-31",
+          "end": "2027-07-31",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
+        },
+        {
+          "start": "2027-08-28",
+          "end": "2027-08-28",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:30",
+              "close": "12:30",
+              "raw": "Sat 9:30-12:30"
+            },
+            {
+              "day": "Sat",
+              "open": "08:30",
+              "close": "21:30",
+              "raw": "Preview: Sat 8:30-9:30"
+            }
+          ],
+          "notes": [
+            "Thousands of books; 95% donated; sorted; not 'picked over' ; no buyer restrictions ; .25-$1",
+            "Please bring your own boxes and bags"
+          ]
         }
       ],
       "ongoing": null
@@ -1550,6 +4160,25 @@
       "lng": -118.4651728,
       "occurrences": [
         {
+          "start": "2026-11-28",
+          "end": "2026-11-28",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "14:00",
+              "raw": "Sat 10-2"
+            }
+          ],
+          "notes": [
+            "$1 or less",
+            "Zelle, Paypal also accepted",
+            "Volunteers may purchase before sale",
+            "Fiction only"
+          ]
+        },
+        {
           "start": "2026-12-05",
           "end": "2026-12-05",
           "headline": null,
@@ -1559,25 +4188,35 @@
               "open": "10:00",
               "close": "14:00",
               "raw": "Sat 10-2"
-            },
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "22:00",
-              "raw": "Preview: Sat 9-10"
             }
           ],
           "notes": [
-            "Thousands of books; 99% donated; 70% hardcover; no buyer restrictions ; partly sorted; $1-$20",
+            "$1 or less",
             "Zelle, Paypal also accepted",
-            "Volunteers may purchase before sale"
+            "Volunteers may purchase before sale",
+            "Fiction only"
           ]
         }
       ],
       "ongoing": {
-        "hours": [],
+        "hours": [
+          {
+            "day": "Sat",
+            "open": "10:00",
+            "close": "14:00",
+            "raw": "Sat 10-2"
+          },
+          {
+            "day": "Sat",
+            "open": "09:00",
+            "close": "22:00",
+            "raw": "Preview: Sat 9-10"
+          }
+        ],
         "notes": [
-          "Library hours"
+          "Thousands of books; 99% donated; 70% hardcover; no buyer restrictions ; partly sorted; $1-$20",
+          "Zelle, Paypal also accepted",
+          "Volunteers may purchase before sale"
         ]
       }
     },
@@ -1610,6 +4249,66 @@
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X1967",
+      "city": "Yorba Linda",
+      "venue": "The Book Corner",
+      "address": "4852 Lakeview Ave",
+      "phone": "714-693-5044",
+      "lat": 33.8908128,
+      "lng": -117.8106069,
+      "occurrences": [
+        {
+          "start": "2027-01-30",
+          "end": "2027-01-30",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "16:00",
+              "raw": "Sat 10-4"
+            }
+          ],
+          "notes": [
+            "50",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Mon",
+            "open": "10:00",
+            "close": "19:00",
+            "raw": "Mon 10-7"
+          },
+          {
+            "day": "Tue",
+            "open": "10:00",
+            "close": "16:00",
+            "raw": "Tue 10-4"
+          },
+          {
+            "day": "Wed",
+            "open": "01:00",
+            "close": "19:00",
+            "raw": "Wed 1-7"
+          },
+          {
+            "day": "Sat",
+            "open": "10:00",
+            "close": "16:00",
+            "raw": "Sat 10-4"
+          }
+        ],
+        "notes": [
+          "100% donated",
+          "Credit cards accepted"
+        ]
+      }
     }
   ]
 }

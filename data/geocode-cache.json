@@ -144,6 +144,10 @@
     "lat": 33.6707117,
     "lng": -117.9092951
   },
+  "27235 Highway 189, Blue Jay, CA": {
+    "lat": 34.2466844,
+    "lng": -117.2092094
+  },
   "28798 La Piedra Rd, Menifee, CA": {
     "lat": 33.6759456,
     "lng": -117.1569501
@@ -192,6 +196,10 @@
     "lat": 33.7883082,
     "lng": -117.8497096
   },
+  "4121 Adams Ave, San Diego, CA": {
+    "lat": 32.7630265,
+    "lng": -117.1068654
+  },
   "4193 Park Blvd (at Howard Ave), San Diego, CA": null,
   "43500 Montery Ave, Palm Desert, CA": null,
   "440 W Sierra Madre Blvd, Sierra Madre, CA": {
@@ -201,6 +209,10 @@
   "475 North M St, Tulare, CA": {
     "lat": 36.2129525,
     "lng": -119.3454544
+  },
+  "4852 Lakeview Ave, Yorba Linda, CA": {
+    "lat": 33.8908128,
+    "lng": -117.8106069
   },
   "4985 La Cuenta Dr, San Diego, CA": {
     "lat": 32.8208823,
