@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-08",
+  "scrapedAt": "2026-11-09",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -835,16 +835,6 @@
       "lng": -118.3334162,
       "occurrences": [
         {
-          "start": "2026-11-06",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Fri, Sat noon-4",
-            "5,000+ books; 50% donated; 60% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .10-$5"
-          ]
-        },
-        {
           "start": "2026-12-04",
           "end": "2026-12-05",
           "headline": null,
@@ -1087,22 +1077,6 @@
       "lat": 34.0149216,
       "lng": -118.355455,
       "occurrences": [
-        {
-          "start": "2026-11-07",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "13:00",
-              "raw": "Sat 10-1"
-            }
-          ],
-          "notes": [
-            "500 books; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1 and up"
-          ]
-        },
         {
           "start": "2026-12-05",
           "end": "2026-12-05",
@@ -1412,6 +1386,58 @@
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X2239",
+      "city": "Malibu",
+      "venue": "Malibu Public Library",
+      "address": "23519 Civic Center Way",
+      "phone": "310-456-6438",
+      "lat": 34.0372061,
+      "lng": -118.6882107,
+      "occurrences": [
+        {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "09:00",
+              "close": "16:00",
+              "raw": "Sat 9-4"
+            },
+            {
+              "day": "Mon",
+              "open": "01:00",
+              "close": "16:00",
+              "raw": "Mon 1-4"
+            }
+          ],
+          "notes": [
+            "1,000+ books; 100% donated; 40% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Fri",
+            "open": "11:00",
+            "close": "17:00",
+            "raw": "Mon-Fri 11-5"
+          },
+          {
+            "day": "Sun",
+            "open": "01:00",
+            "close": "17:00",
+            "raw": "Sun 1-5"
+          }
+        ],
+        "notes": [
+          "Paperbacks .50-$1; hardcovers $1; children's .50-$1; A/V $1, software, games $3"
+        ]
+      }
     },
     {
       "id": "X7360",
@@ -1989,28 +2015,6 @@
       "lng": -117.1835214,
       "occurrences": [
         {
-          "start": "2026-11-07",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:30",
-              "close": "16:30",
-              "raw": "Sat 11:30-4:30"
-            },
-            {
-              "day": "Sat",
-              "open": "10:30",
-              "close": "23:30",
-              "raw": "Preview: Sat 10:30-11:30 Friends only"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions ; $8/bag ($5/bag for members)"
-          ]
-        },
-        {
           "start": "2026-12-05",
           "end": "2026-12-05",
           "headline": null,
@@ -2391,29 +2395,6 @@
       "lng": -117.0405989,
       "occurrences": [
         {
-          "start": "2026-11-07",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "15:00",
-              "raw": "Sat 9:30-3"
-            },
-            {
-              "day": "Fri",
-              "open": "01:00",
-              "close": "15:00",
-              "raw": "Preview: Fri 1-3pm"
-            }
-          ],
-          "notes": [
-            "10,000+ books; $1",
-            "Books scanned to sell online"
-          ]
-        },
-        {
           "start": "2026-12-05",
           "end": "2026-12-05",
           "headline": null,
@@ -2633,16 +2614,6 @@
       "lng": -117.0980871,
       "occurrences": [
         {
-          "start": "2026-11-06",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Fri, Sa5 10-5",
-            "90% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50 and up"
-          ]
-        },
-        {
           "start": "2026-12-04",
           "end": "2026-12-05",
           "headline": null,
@@ -2744,16 +2715,6 @@
       "lat": 32.74727,
       "lng": -117.126847,
       "occurrences": [
-        {
-          "start": "2026-11-07",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "1,000 books; 70% donated; 70% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .25-$1"
-          ]
-        },
         {
           "start": "2026-12-05",
           "end": "2026-12-05",
@@ -3019,20 +2980,6 @@
       "lng": -117.162772,
       "occurrences": [
         {
-          "start": "2026-11-05",
-          "end": "2026-11-05",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Thu",
-              "open": "03:00",
-              "close": "19:00",
-              "raw": "Thu 3-7pm"
-            }
-          ],
-          "notes": []
-        },
-        {
           "start": "2026-12-03",
           "end": "2026-12-03",
           "headline": null,
@@ -3171,22 +3118,8 @@
       "lng": -117.0980871,
       "occurrences": [
         {
-          "start": "2026-11-06",
-          "end": "2026-11-09",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "17:00",
-              "raw": "Sat 10-5"
-            }
-          ],
-          "notes": []
-        },
-        {
           "start": "2026-12-04",
-          "end": "2026-12-07",
+          "end": "2026-12-05",
           "headline": null,
           "hours": [
             {
@@ -3200,7 +3133,7 @@
         },
         {
           "start": "2027-01-01",
-          "end": "2027-01-04",
+          "end": "2027-01-02",
           "headline": null,
           "hours": [
             {
@@ -3214,7 +3147,7 @@
         },
         {
           "start": "2027-02-05",
-          "end": "2027-02-08",
+          "end": "2027-02-06",
           "headline": null,
           "hours": [
             {
@@ -3228,7 +3161,7 @@
         },
         {
           "start": "2027-03-05",
-          "end": "2027-03-08",
+          "end": "2027-03-06",
           "headline": null,
           "hours": [
             {
@@ -3242,7 +3175,7 @@
         },
         {
           "start": "2027-04-02",
-          "end": "2027-04-05",
+          "end": "2027-04-03",
           "headline": null,
           "hours": [
             {
@@ -3256,7 +3189,7 @@
         },
         {
           "start": "2027-04-30",
-          "end": "2027-05-03",
+          "end": "2027-05-01",
           "headline": null,
           "hours": [
             {
@@ -3270,7 +3203,7 @@
         },
         {
           "start": "2027-06-04",
-          "end": "2027-06-07",
+          "end": "2027-06-05",
           "headline": null,
           "hours": [
             {
@@ -3284,7 +3217,7 @@
         },
         {
           "start": "2027-07-02",
-          "end": "2027-07-05",
+          "end": "2027-07-03",
           "headline": null,
           "hours": [
             {
@@ -3298,7 +3231,7 @@
         },
         {
           "start": "2027-08-06",
-          "end": "2027-08-09",
+          "end": "2027-08-07",
           "headline": null,
           "hours": [
             {
@@ -3339,22 +3272,6 @@
       "lat": 34.3541659,
       "lng": -119.0592705,
       "occurrences": [
-        {
-          "start": "2026-11-07",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "not 'picked over' ; no buyer restrictions ; paperbacks .50-$1; hardcovers $2; children's .50; specials start at $4"
-          ]
-        },
         {
           "start": "2026-12-05",
           "end": "2026-12-05",
@@ -4219,36 +4136,6 @@
           "Volunteers may purchase before sale"
         ]
       }
-    },
-    {
-      "id": "X14336",
-      "city": "Ventura",
-      "venue": "Ventura Friends of the Library \u2014 held at:",
-      "address": "6040 Telegraph Rd",
-      "phone": "805-223-1187",
-      "lat": 34.2768324,
-      "lng": -119.2125932,
-      "occurrences": [
-        {
-          "start": "2026-11-07",
-          "end": "2026-11-07",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "15:00",
-              "raw": "Sat 9-3"
-            }
-          ],
-          "notes": [
-            "1,000 books; 100% donated; 80% hardcover; sorted; no buyer restrictions ; .50-$5",
-            "Some books sold online",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": null
     },
     {
       "id": "X1967",
