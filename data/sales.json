@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-14",
+  "scrapedAt": "2026-11-15",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -543,22 +543,6 @@
       "lng": -117.7169451,
       "occurrences": [
         {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            ".25-.50 plus holiday books $1-$20"
-          ]
-        },
-        {
           "start": "2027-01-09",
           "end": "2027-01-09",
           "headline": null,
@@ -571,7 +555,7 @@
             }
           ],
           "notes": [
-            ".25-.50 plus holiday books $1-$20"
+            "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
           ]
         },
         {
@@ -587,7 +571,7 @@
             }
           ],
           "notes": [
-            ".25-.50 plus holiday books $1-$20"
+            "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
           ]
         },
         {
@@ -603,7 +587,7 @@
             }
           ],
           "notes": [
-            ".25-.50 plus holiday books $1-$20"
+            "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
           ]
         },
         {
@@ -619,21 +603,33 @@
             }
           ],
           "notes": [
-            ".25-.50 plus holiday books $1-$20"
+            "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
           ]
         }
       ],
       "ongoing": {
         "hours": [
           {
+            "day": "Thu",
+            "open": "10:15",
+            "close": "18:00",
+            "raw": "Mon-Thu 10:15 - 6; Fri"
+          },
+          {
             "day": "Sat",
-            "open": "10:00",
-            "close": "14:00",
-            "raw": "Sat 10-2"
+            "open": "10:15",
+            "close": "16:00",
+            "raw": "Sat 10:15-4"
+          },
+          {
+            "day": "Sun",
+            "open": "01:00",
+            "close": "16:00",
+            "raw": "Sun 1-4"
           }
         ],
         "notes": [
-          "100% donated; not 'picked over' ; no buyer restrictions ; .25-.50 each"
+          "Bookstore with occasional special Saturday sales"
         ]
       }
     },
@@ -1672,53 +1668,6 @@
       }
     },
     {
-      "id": "X5361",
-      "city": "Northridge",
-      "venue": "California State University, Oviatt Library",
-      "address": "18111 Nordhoff St.",
-      "phone": "818-677-5573",
-      "lat": 34.2455346,
-      "lng": -118.5263221,
-      "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [],
-          "notes": []
-        }
-      ],
-      "ongoing": null
-    },
-    {
-      "id": "X10709",
-      "city": "Northridge",
-      "venue": "Northridge Public Library",
-      "address": "9051 Darby Ave",
-      "phone": "818-886-3640",
-      "lat": 34.2347684,
-      "lng": -118.5339689,
-      "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "14:00",
-              "raw": "Sat 10-2"
-            }
-          ],
-          "notes": [
-            "2,500 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1-$3"
-          ]
-        }
-      ],
-      "ongoing": null
-    },
-    {
       "id": "X7650",
       "city": "Orange",
       "venue": "Orange Public Library & History Center",
@@ -1940,49 +1889,6 @@
         }
       ],
       "ongoing": null
-    },
-    {
-      "id": "X10420",
-      "city": "Pasadena",
-      "venue": "Pasadena Public Library \u2014 Jefferson Campus",
-      "address": "1500 East Villa St.",
-      "phone": "626-744-4680",
-      "lat": 34.154263,
-      "lng": -118.119745,
-      "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "11:00",
-              "close": "14:00",
-              "raw": "Sat 11-2"
-            }
-          ],
-          "notes": [
-            "2,000+ books; 100% donated; 85% hardcover; no buyer restrictions ; Partly sorted; $5/paper grocery bag (specials not included).",
-            "Valuable books sold online and in bookstore",
-            "Credit cards accepted"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Thu",
-            "open": "11:00",
-            "close": "16:00",
-            "raw": "Mon-Thu 11-4; Sat 11-4"
-          }
-        ],
-        "notes": [
-          "3,000 books; 100% donated; .50-$2",
-          "Credit cards accepted"
-        ]
-      }
     },
     {
       "id": "X11539",
@@ -2242,17 +2148,6 @@
       "lat": 33.9998637,
       "lng": -117.4123324,
       "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sat 10-noon",
-            "100% donated; 20% hardcover; no buyer restrictions ; All items .25 or less",
-            "Cash only; please bring small bills/change, please bring your own bags"
-          ]
-        },
         {
           "start": "2026-12-12",
           "end": "2026-12-12",
@@ -2817,20 +2712,6 @@
       "lat": 32.7089055,
       "lng": -117.1541411,
       "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "16:00",
-              "raw": "Sat 10-4"
-            }
-          ],
-          "notes": []
-        },
         {
           "start": "2026-12-12",
           "end": "2026-12-12",
@@ -3435,28 +3316,6 @@
       "lng": -118.4436874,
       "occurrences": [
         {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:30",
-              "close": "13:30",
-              "raw": "Sat 9:30-1:30"
-            },
-            {
-              "day": "Fri",
-              "open": "03:30",
-              "close": "17:00",
-              "raw": "Preview: Fri 3:30-5; Friends only"
-            }
-          ],
-          "notes": [
-            "5,000 books; 100% donated; 50% hardcover; sorted; not 'picked over' ; no buyer restrictions ; .50-$1"
-          ]
-        },
-        {
           "start": "2026-12-12",
           "end": "2026-12-12",
           "headline": null,
@@ -4039,25 +3898,7 @@
       "phone": "310-781-7595",
       "lat": 33.8371247,
       "lng": -118.3429843,
-      "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-14",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "10:00",
-              "close": "16:00",
-              "raw": "Sat 10-4"
-            }
-          ],
-          "notes": [
-            "2,000 books; 90% donated; 60% hardcover; sorted; no buyer restrictions ; .50-$1.50",
-            "Higher value books sold online"
-          ]
-        }
-      ],
+      "occurrences": [],
       "ongoing": {
         "hours": [],
         "notes": [
