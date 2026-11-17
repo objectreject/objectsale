@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-16",
+  "scrapedAt": "2026-11-17",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -406,6 +406,35 @@
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X2372",
+      "city": "Escondido",
+      "venue": "Escondido Public Library",
+      "address": "239 S. Kalmia St",
+      "phone": "760-839-4832",
+      "lat": 33.1208887,
+      "lng": -117.0797645,
+      "occurrences": [
+        {
+          "start": "2026-11-28",
+          "end": "2026-11-28",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "not 'picked over' ; no buyer restrictions",
+            "Half price in store"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Mon-Sat 10:-4",
+          "1,000+ books; 100% donated; sorted; .50 and up",
+          "Credit cards accepted"
+        ]
+      }
     },
     {
       "id": "X10380",
@@ -1889,6 +1918,49 @@
         }
       ],
       "ongoing": null
+    },
+    {
+      "id": "X10420",
+      "city": "Pasadena",
+      "venue": "Pasadena Public Library \u2014 Jefferson Campus",
+      "address": "1500 East Villa St.",
+      "phone": "626-675-0939",
+      "lat": 34.154263,
+      "lng": -118.119745,
+      "occurrences": [
+        {
+          "start": "2027-02-13",
+          "end": "2027-02-13",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "11:00",
+              "close": "14:00",
+              "raw": "Sat 11-2"
+            }
+          ],
+          "notes": [
+            "2,000+ books; 100% donated; 90% hardcover; sorted; no buyer restrictions ; $5/paper grocery bag (specials not included).",
+            "Valuable books sold online",
+            "Credit cards accepted"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [
+          {
+            "day": "Thu",
+            "open": "11:00",
+            "close": "16:00",
+            "raw": "Mon-Thu 11-4; Sat 11-4"
+          }
+        ],
+        "notes": [
+          "3,000 books; 100% donated; .50-$2",
+          "Credit cards accepted"
+        ]
+      }
     },
     {
       "id": "X11539",
