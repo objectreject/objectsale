@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-22",
+  "scrapedAt": "2026-11-24",
   "source": "https://www.booksalefinder.com/CAS.html",
   "sales": [
     {
@@ -202,33 +202,6 @@
         "hours": [],
         "notes": [
           "Library hours"
-        ]
-      }
-    },
-    {
-      "id": "X11344",
-      "city": "Canyon Country",
-      "venue": "Canyon Country Library",
-      "address": "18601 Soledad Canyon Rd",
-      "phone": "661-251-2720",
-      "lat": 34.4164602,
-      "lng": -118.4590695,
-      "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-22",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "$7/bag in bookstore"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [],
-        "notes": [
-          "Library hours",
-          "Thousands of books"
         ]
       }
     },
@@ -1521,51 +1494,6 @@
         ],
         "notes": [
           ".50 & up"
-        ]
-      }
-    },
-    {
-      "id": "X9851",
-      "city": "Newhall (Santa Clarita)",
-      "venue": "Newhall Library \u2014 held at Old Town Newhall",
-      "address": "24500 Main St.",
-      "phone": "661-259-0750",
-      "lat": 34.3818781,
-      "lng": -118.5295153,
-      "occurrences": [
-        {
-          "start": "2026-11-14",
-          "end": "2026-11-22",
-          "headline": null,
-          "hours": [],
-          "notes": [
-            "Sale in bookstore $7/bag"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Thu",
-            "open": "09:00",
-            "close": "20:00",
-            "raw": "Mon-Thu 9-8"
-          },
-          {
-            "day": "Fri",
-            "open": "10:00",
-            "close": "17:00",
-            "raw": "Fri 10-5"
-          },
-          {
-            "day": "Sun",
-            "open": "01:00",
-            "close": "17:00",
-            "raw": "Sun 1-5"
-          }
-        ],
-        "notes": [
-          "Thousands of books; 100% donated; 80% hardcover; sorted; .25-$2"
         ]
       }
     },
