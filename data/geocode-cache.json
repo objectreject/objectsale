@@ -93,6 +93,10 @@
     "lat": 34.4164602,
     "lng": -118.4590695
   },
+  "18601 Soledad Canyon Rd, Santa Clarita, CA": {
+    "lat": 34.4164602,
+    "lng": -118.4590695
+  },
   "1874 N. Hillhurst Ave., Los Angeles (Los Feliz), CA": {
     "lat": 34.1055614,
     "lng": -118.2874231
@@ -121,6 +125,7 @@
     "lat": 34.0372061,
     "lng": -118.6882107
   },
+  "23743 W. Valencia Blvd., Santa Clarita, CA": null,
   "23743 W. Valencia Blvd., Valencia, CA": null,
   "239 S. Kalmia St, Escondido, CA": {
     "lat": 33.1208887,

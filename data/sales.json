@@ -1352,58 +1352,6 @@
       "ongoing": null
     },
     {
-      "id": "X2239",
-      "city": "Malibu",
-      "venue": "Malibu Public Library",
-      "address": "23519 Civic Center Way",
-      "phone": "310-456-6438",
-      "lat": 34.0372061,
-      "lng": -118.6882107,
-      "occurrences": [
-        {
-          "start": "2026-11-21",
-          "end": "2026-11-23",
-          "headline": null,
-          "hours": [
-            {
-              "day": "Sat",
-              "open": "09:00",
-              "close": "16:00",
-              "raw": "Sat 9-4"
-            },
-            {
-              "day": "Mon",
-              "open": "01:00",
-              "close": "16:00",
-              "raw": "Mon 1-4"
-            }
-          ],
-          "notes": [
-            "1,000+ books; 100% donated; 40% hardcover; sorted; not 'picked over' ; no buyer restrictions ; $1"
-          ]
-        }
-      ],
-      "ongoing": {
-        "hours": [
-          {
-            "day": "Fri",
-            "open": "11:00",
-            "close": "17:00",
-            "raw": "Mon-Fri 11-5"
-          },
-          {
-            "day": "Sun",
-            "open": "01:00",
-            "close": "17:00",
-            "raw": "Sun 1-5"
-          }
-        ],
-        "notes": [
-          "Paperbacks .50-$1; hardcovers $1; children's .50-$1; A/V $1, software, games $3"
-        ]
-      }
-    },
-    {
       "id": "X7360",
       "city": "Manhattan Beach",
       "venue": "Manhattan Beach Library",
@@ -1494,6 +1442,53 @@
         ],
         "notes": [
           ".50 & up"
+        ]
+      }
+    },
+    {
+      "id": "X9851",
+      "city": "Newhall (Santa Clarita)",
+      "venue": "Old Town Newhall Library",
+      "address": "24500 Main St.",
+      "phone": "661-259-0750",
+      "lat": 34.3818781,
+      "lng": -118.5295153,
+      "occurrences": [
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-14",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in the bookstore (reuse same bag for $6)"
+          ]
+        },
+        {
+          "start": "2027-05-15",
+          "end": "2027-05-23",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in the bookstore (reuse same bag for $6)"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-15",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in the bookstore (reuse same bag for $6)"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours",
+          "Thousands of books; 100% donated; 80% hardcover; sorted; .25-$2",
+          "Some books sold online",
+          "Credit cards accepted"
         ]
       }
     },
@@ -2953,6 +2948,20 @@
           "notes": []
         },
         {
+          "start": "2027-01-08",
+          "end": "2027-01-09",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
           "start": "2027-02-05",
           "end": "2027-02-06",
           "headline": null,
@@ -3009,6 +3018,20 @@
           "notes": []
         },
         {
+          "start": "2027-05-07",
+          "end": "2027-05-08",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
           "start": "2027-06-04",
           "end": "2027-06-05",
           "headline": null,
@@ -3025,6 +3048,20 @@
         {
           "start": "2027-07-02",
           "end": "2027-07-03",
+          "headline": null,
+          "hours": [
+            {
+              "day": "Sat",
+              "open": "10:00",
+              "close": "17:00",
+              "raw": "Sat 10-5"
+            }
+          ],
+          "notes": []
+        },
+        {
+          "start": "2027-07-09",
+          "end": "2027-07-10",
           "headline": null,
           "hours": [
             {
@@ -3067,6 +3104,53 @@
         "notes": [
           "Library hours",
           "350 nearly new books, software, books for collectors - Permanent $1 Sale"
+        ]
+      }
+    },
+    {
+      "id": "X11344",
+      "city": "Santa Clarita",
+      "venue": "Canyon Country Library",
+      "address": "18601 Soledad Canyon Rd",
+      "phone": "661-251-2720",
+      "lat": 34.4164602,
+      "lng": -118.4590695,
+      "occurrences": [
+        {
+          "start": "2027-02-06",
+          "end": "2027-02-14",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in the bookstore (reuse same bag for $6)"
+          ]
+        },
+        {
+          "start": "2027-05-15",
+          "end": "2027-05-23",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in the bookstore (reuse same bag for $6)"
+          ]
+        },
+        {
+          "start": "2027-08-07",
+          "end": "2027-08-15",
+          "headline": null,
+          "hours": [],
+          "notes": [
+            "$7/bag in the bookstore (reuse same bag for $6)"
+          ]
+        }
+      ],
+      "ongoing": {
+        "hours": [],
+        "notes": [
+          "Library hours",
+          "Thousands of books; 100% donated; 80% hardcover; sorted; .25-$2",
+          "Some books sold online",
+          "Credit cards accepted"
         ]
       }
     },
